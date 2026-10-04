@@ -11,10 +11,13 @@ room = room.astype(np.float32)
 FINISHES = {
     'casella':  ('swatch_H1369_ST40_marone_casella_oak.jpg', (70, 510, 200, 870), 'redesign_casella_oak_frame'),
     'tobacco':  ('swatch_sheet_H3325_ST28.jpg', (600, 1290, 40, 1130), 'redesign_tobacco_gladstone_oak_frame'),
+    'walnut':   ('swatch_walnut_decor.webp', (0, 1152, 0, 1536), 'redesign_walnut_decor_frame'),   # flat decor scan, grain runs horizontally
 }
-FINISH = sys.argv[2] if len(sys.argv) > 2 else 'tobacco'
+FINISH = sys.argv[2] if len(sys.argv) > 2 else 'walnut'
 sw_file, (y0, y1, x0, x1), OUT_NAME = FINISHES[FINISH]
 sw = cv2.imread(sw_file).astype(np.float32)[y0:y1, x0:x1]
+if FINISH == 'walnut':
+    sw = cv2.rotate(sw, cv2.ROTATE_90_CLOCKWISE)   # grain vertical, like the other samples
 H, W = room.shape[:2]
 
 # flatten the swatch photo's uneven lighting, keep the grain + colour
@@ -22,12 +25,13 @@ lum = sw.mean(2, keepdims=True)
 sw_flat = sw / (cv2.GaussianBlur(lum, (0, 0), 60)[..., None] if lum.ndim == 2 else cv2.GaussianBlur(lum, (0, 0), 60)[..., None]) * lum.mean()
 sw_flat = np.clip(sw_flat, 0, 255)
 SW_MEAN = sw_flat.reshape(-1, 3).mean(0)
-GRAIN = 1.0 if FINISH == 'casella' else 0.7   # tame the swatch photo's harsh pore shadows at panel scale
+GRAIN = {'casella': 1.0, 'tobacco': 0.7, 'walnut': 1.0}[FINISH]   # tame the swatch photo's harsh pore shadows at panel scale
 sw_flat = SW_MEAN + (sw_flat - SW_MEAN) * GRAIN
 # colour of the original walnut under neutral daylight (right end panel, BGR), to recover the room's light colour
 WALNUT = np.float32([118, 135, 147]); WALNUT /= WALNUT.mean()
 
-STRETCH = 1.6   # mild stretch along the grain only; keeps the oak figure readable
+# mild stretch along the grain only, and how much of the sample's width one 600 mm panel shows
+STRETCH, CW = {'casella': (1.6, 0.6), 'tobacco': (1.6, 0.6), 'walnut': (1.4, 0.45)}[FINISH]
 
 def texture(w, h, seed=0, horizontal=False):
     t = sw_flat
@@ -35,7 +39,7 @@ def texture(w, h, seed=0, horizontal=False):
         t = cv2.rotate(t, cv2.ROTATE_90_CLOCKWISE); w, h = h, w
     rng = np.random.default_rng(seed)
     th, tw = t.shape[:2]
-    cw = int(tw * 0.6); x0 = rng.integers(0, tw - cw)
+    cw = int(tw * CW); x0 = rng.integers(0, tw - cw)
     t = t[:, x0:x0 + cw]
     need = int(np.ceil(cw * h / w / STRETCH))
     tiles = [t if i % 2 == 0 else t[::-1] for i in range(need // th + 1)]   # mirror-tile along the grain
