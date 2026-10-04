@@ -11,12 +11,13 @@ room = room.astype(np.float32)
 FINISHES = {
     'casella':  ('swatch_H1369_ST40_marone_casella_oak.jpg', (70, 510, 200, 870), 'redesign_casella_oak_frame'),
     'tobacco':  ('swatch_sheet_H3325_ST28.jpg', (600, 1290, 40, 1130), 'redesign_tobacco_gladstone_oak_frame'),
-    'walnut':   ('swatch_H3702_ST10_tobacco_pacific_walnut.webp', (0, 1152, 0, 1536), 'redesign_tobacco_pacific_walnut_frame'),   # flat decor scan, grain runs horizontally
+    'walnut':   ('swatch_H3702_ST10_tobacco_pacific_walnut.webp', (0, 1152, 0, 1536), 'redesign_tobacco_pacific_walnut_frame'),
+    'tonsberg': ('swatch_H309_ST12_brown_tonsberg_oak.webp', (0, 1152, 0, 1536), 'redesign_brown_tonsberg_oak_frame'),   # flat decor scan, grain runs horizontally
 }
-FINISH = sys.argv[2] if len(sys.argv) > 2 else 'walnut'
+FINISH = sys.argv[2] if len(sys.argv) > 2 else 'tonsberg'
 sw_file, (y0, y1, x0, x1), OUT_NAME = FINISHES[FINISH]
 sw = cv2.imread(sw_file).astype(np.float32)[y0:y1, x0:x1]
-if FINISH == 'walnut':
+if FINISH in ('walnut', 'tonsberg'):
     sw = cv2.rotate(sw, cv2.ROTATE_90_CLOCKWISE)   # grain vertical, like the other samples
 H, W = room.shape[:2]
 
@@ -25,13 +26,13 @@ lum = sw.mean(2, keepdims=True)
 sw_flat = sw / (cv2.GaussianBlur(lum, (0, 0), 60)[..., None] if lum.ndim == 2 else cv2.GaussianBlur(lum, (0, 0), 60)[..., None]) * lum.mean()
 sw_flat = np.clip(sw_flat, 0, 255)
 SW_MEAN = sw_flat.reshape(-1, 3).mean(0)
-GRAIN = {'casella': 1.0, 'tobacco': 0.7, 'walnut': 1.0}[FINISH]   # tame the swatch photo's harsh pore shadows at panel scale
+GRAIN = {'casella': 1.0, 'tobacco': 0.7, 'walnut': 1.0, 'tonsberg': 1.0}[FINISH]   # tame the swatch photo's harsh pore shadows at panel scale
 sw_flat = SW_MEAN + (sw_flat - SW_MEAN) * GRAIN
 # colour of the original walnut under neutral daylight (right end panel, BGR), to recover the room's light colour
 WALNUT = np.float32([118, 135, 147]); WALNUT /= WALNUT.mean()
 
 # mild stretch along the grain only, and how much of the sample's width one 600 mm panel shows
-STRETCH, CW = {'casella': (1.6, 0.6), 'tobacco': (1.6, 0.6), 'walnut': (1.4, 0.45)}[FINISH]
+STRETCH, CW = {'casella': (1.6, 0.6), 'tobacco': (1.6, 0.6), 'walnut': (1.4, 0.45), 'tonsberg': (1.4, 0.45)}[FINISH]
 
 def texture(w, h, seed=0, horizontal=False):
     t = sw_flat
