@@ -11,7 +11,7 @@ room = room.astype(np.float32)
 FINISHES = {
     'casella':  ('swatch_H1369_ST40_marone_casella_oak.jpg', (70, 510, 200, 870), 'redesign_casella_oak_frame'),
     'tobacco':  ('swatch_sheet_H3325_ST28.jpg', (600, 1290, 40, 1130), 'redesign_tobacco_gladstone_oak_frame'),
-    'walnut':   ('swatch_walnut_decor.webp', (0, 1152, 0, 1536), 'redesign_walnut_decor_frame'),   # flat decor scan, grain runs horizontally
+    'walnut':   ('swatch_H3702_ST10_tobacco_pacific_walnut.webp', (0, 1152, 0, 1536), 'redesign_tobacco_pacific_walnut_frame'),   # flat decor scan, grain runs horizontally
 }
 FINISH = sys.argv[2] if len(sys.argv) > 2 else 'walnut'
 sw_file, (y0, y1, x0, x1), OUT_NAME = FINISHES[FINISH]
