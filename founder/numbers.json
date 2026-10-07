@@ -1,0 +1,30 @@
+{
+  "business": "RizqPure Halal Collagen (ESTIMATES: replace with real costs)",
+  "unit": "pouch",
+  "price": 16.20,
+  "variable": [
+    {"label": "Collagen 300g + vit C + biotin, filled & sealed pouch (EST)", "cost": 5.20},
+    {"label": "Mailer + scoop + insert (EST)", "cost": 0.45},
+    {"label": "Royal Mail postage, blended (EST)", "cost": 2.10},
+    {"label": "Card fees ~2% + 25p (EST)", "cost": 0.57},
+    {"label": "Meals donation (EST)", "cost": 0.50},
+    {"label": "Blended marketing per pouch sold (EST)", "cost": 3.00}
+  ],
+  "fixed_monthly": [
+    {"label": "Shopify plan + apps (subscriptions, reviews, email) (EST)", "cost": 120},
+    {"label": "Product liability insurance (EST)", "cost": 40},
+    {"label": "Halal certification + lab testing, monthly share (EST)", "cost": 80},
+    {"label": "Content, samples, creator gifting (EST)", "cost": 300},
+    {"label": "Accounting + bookkeeping (EST)", "cost": 60}
+  ],
+  "startup": [
+    {"label": "Pack reprint with certifier logo + compliant claims (EST)", "cost": 800},
+    {"label": "Independent lab test (heavy metals, micro, halal DNA/porcine) (EST)", "cost": 600},
+    {"label": "Trial sachet run, 2,000 x 7-day packs (EST)", "cost": 1600},
+    {"label": "Regulatory claims review (EST)", "cost": 500},
+    {"label": "Launch push: creators + Ramadan prep (EST)", "cost": 1500}
+  ],
+  "days_per_month": 30,
+  "plan_per_day": 20,
+  "ramp_per_day": [6, 8, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20]
+}

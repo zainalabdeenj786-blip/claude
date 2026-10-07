@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Andre",
+  "age": 46,
+  "segment": "Career-focused professional",
+  "income": 31000,
+  "behaviour": "Family-first spender",
+  "behaviour_how": "Puts the household budget first and feels guilty spending on themselves.",
+  "objection": "How do I know it is really halal? Who certified it?",
+  "habit": "you have a WhatsApp group with sisters or cousins who share product tips"
+ },
+ {
+  "id": "P002",
+  "name": "Wes",
+  "age": 50,
+  "segment": "Gym-goer focused on recovery",
+  "income": 43000,
+  "behaviour": "Strict halal checker",
+  "behaviour_how": "Checks the certifying body on every supplement and avoids anything with gelatine or unclear sources.",
+  "objection": "I don't want to be locked into a subscription",
+  "habit": "you have a WhatsApp group with sisters or cousins who share product tips"
+ },
+ {
+  "id": "P003",
+  "name": "Hugo",
+  "age": 23,
+  "segment": "Has joint or mobility niggles",
+  "income": 49000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Buys supplements on Amazon or at Holland & Barrett when they are on offer.",
+  "objection": "I have never heard of this brand",
+  "habit": "you have a WhatsApp group with sisters or cousins who share product tips"
+ },
+ {
+  "id": "P004",
+  "name": "Theo",
+  "age": 28,
+  "segment": "Parent and household decision-maker",
+  "income": 54000,
+  "behaviour": "Strict halal checker",
+  "behaviour_how": "Checks the certifying body on every supplement and avoids anything with gelatine or unclear sources.",
+  "objection": "I have never heard of this brand",
+  "habit": "you give sadaqah regularly, more in Ramadan"
+ },
+ {
+  "id": "P005",
+  "name": "Marcus",
+  "age": 22,
+  "segment": "Career-focused professional",
+  "income": 23000,
+  "behaviour": "Already uses a non-halal collagen",
+  "behaviour_how": "Takes a mainstream collagen and has not looked hard at whether it is halal.",
+  "objection": "I could get a bigger tub cheaper on Amazon",
+  "habit": "you shop on Amazon most weeks"
+ },
+ {
+  "id": "P006",
+  "name": "Idris",
+  "age": 43,
+  "segment": "Gym-goer focused on recovery",
+  "income": 28000,
+  "behaviour": "Beauty and skincare enthusiast",
+  "behaviour_how": "Follows Muslim beauty creators on TikTok and Instagram and tries what they recommend.",
+  "objection": "How do I know it is really halal? Who certified it?",
+  "habit": "you give sadaqah regularly, more in Ramadan"
+ },
+ {
+  "id": "P007",
+  "name": "Ravi",
+  "age": 25,
+  "segment": "Career-focused professional",
+  "income": 44000,
+  "behaviour": "Sceptical label reader",
+  "behaviour_how": "Wants evidence that a supplement works before paying for it monthly.",
+  "objection": "Unflavoured powder sounds like a hassle to take every day",
+  "habit": "you scroll TikTok in the evening"
+ },
+ {
+  "id": "P008",
+  "name": "Malik",
+  "age": 33,
+  "segment": "Gym-goer focused on recovery",
+  "income": 23000,
+  "behaviour": "Family-first spender",
+  "behaviour_how": "Puts the household budget first and feels guilty spending on themselves.",
+  "objection": "Unflavoured powder sounds like a hassle to take every day",
+  "habit": "you have a coffee or tea every morning"
+ },
+ {
+  "id": "P009",
+  "name": "Dev",
+  "age": 32,
+  "segment": "Has joint or mobility niggles",
+  "income": 31000,
+  "behaviour": "Strict halal checker",
+  "behaviour_how": "Checks the certifying body on every supplement and avoids anything with gelatine or unclear sources.",
+  "objection": "Collagen is just protein, does it actually do anything for skin or joints?",
+  "habit": "you have a WhatsApp group with sisters or cousins who share product tips"
+ },
+ {
+  "id": "P010",
+  "name": "Elle",
+  "age": 44,
+  "segment": "Gym-goer focused on recovery",
+  "income": 47000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Buys supplements on Amazon or at Holland & Barrett when they are on offer.",
+  "objection": "I could get a bigger tub cheaper on Amazon",
+  "habit": "you shop on Amazon most weeks"
+ },
+ {
+  "id": "P011",
+  "name": "Mei",
+  "age": 53,
+  "segment": "Career-focused professional",
+  "income": 29000,
+  "behaviour": "Sceptical label reader",
+  "behaviour_how": "Wants evidence that a supplement works before paying for it monthly.",
+  "objection": "Unflavoured powder sounds like a hassle to take every day",
+  "habit": "you give sadaqah regularly, more in Ramadan"
+ },
+ {
+  "id": "P012",
+  "name": "Rhys",
+  "age": 40,
+  "segment": "Career-focused professional",
+  "income": 24000,
+  "behaviour": "Sceptical label reader",
+  "behaviour_how": "Wants evidence that a supplement works before paying for it monthly.",
+  "objection": "Unflavoured powder sounds like a hassle to take every day",
+  "habit": "you scroll TikTok in the evening"
+ },
+ {
+  "id": "P013",
+  "name": "Noah",
+  "age": 54,
+  "segment": "Career-focused professional",
+  "income": 46000,
+  "behaviour": "Beauty and skincare enthusiast",
+  "behaviour_how": "Follows Muslim beauty creators on TikTok and Instagram and tries what they recommend.",
+  "objection": "How do I know it is really halal? Who certified it?",
+  "habit": "you have a WhatsApp group with sisters or cousins who share product tips"
+ },
+ {
+  "id": "P014",
+  "name": "Farah",
+  "age": 28,
+  "segment": "Has joint or mobility niggles",
+  "income": 26000,
+  "behaviour": "Deal hunter",
+  "behaviour_how": "Buys supplements on Amazon or at Holland & Barrett when they are on offer.",
+  "objection": "I don't want to be locked into a subscription",
+  "habit": "you shop on Amazon most weeks"
+ },
+ {
+  "id": "P015",
+  "name": "Nia",
+  "age": 33,
+  "segment": "Parent and household decision-maker",
+  "income": 30000,
+  "behaviour": "Beauty and skincare enthusiast",
+  "behaviour_how": "Follows Muslim beauty creators on TikTok and Instagram and tries what they recommend.",
+  "objection": "How do I know it is really halal? Who certified it?",
+  "habit": "you give sadaqah regularly, more in Ramadan"
+ },
+ {
+  "id": "P016",
+  "name": "Yara",
+  "age": 55,
+  "segment": "Career-focused professional",
+  "income": 42000,
+  "behaviour": "Beauty and skincare enthusiast",
+  "behaviour_how": "Follows Muslim beauty creators on TikTok and Instagram and tries what they recommend.",
+  "objection": "I have never heard of this brand",
+  "habit": "you buy groceries at a local halal butcher and supermarket"
+ },
+ {
+  "id": "P017",
+  "name": "Rafael",
+  "age": 24,
+  "segment": "Parent and household decision-maker",
+  "income": 46000,
+  "behaviour": "Values-driven buyer",
+  "behaviour_how": "Prefers Muslim-owned brands and businesses that give back, especially in Ramadan.",
+  "objection": "Unflavoured powder sounds like a hassle to take every day",
+  "habit": "you have a WhatsApp group with sisters or cousins who share product tips"
+ },
+ {
+  "id": "P018",
+  "name": "Hamza",
+  "age": 43,
+  "segment": "Parent and household decision-maker",
+  "income": 40000,
+  "behaviour": "Already uses a non-halal collagen",
+  "behaviour_how": "Takes a mainstream collagen and has not looked hard at whether it is halal.",
+  "objection": "Unflavoured powder sounds like a hassle to take every day",
+  "habit": "you give sadaqah regularly, more in Ramadan"
+ },
+ {
+  "id": "P019",
+  "name": "Arjun",
+  "age": 23,
+  "segment": "Parent and household decision-maker",
+  "income": 25000,
+  "behaviour": "Values-driven buyer",
+  "behaviour_how": "Prefers Muslim-owned brands and businesses that give back, especially in Ramadan.",
+  "objection": "I have never heard of this brand",
+  "habit": "you go to the gym three times a week"
+ },
+ {
+  "id": "P020",
+  "name": "Bilal",
+  "age": 49,
+  "segment": "Parent and household decision-maker",
+  "income": 36000,
+  "behaviour": "Strict halal checker",
+  "behaviour_how": "Checks the certifying body on every supplement and avoids anything with gelatine or unclear sources.",
+  "objection": "Unflavoured powder sounds like a hassle to take every day",
+  "habit": "you give sadaqah regularly, more in Ramadan"
+ }
+]

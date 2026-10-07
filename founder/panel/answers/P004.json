@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I have never heard of RizqPure, and 'halal-certified' on its own means nothing to me until I know which body certified it and can check it myself. I'm not putting bovine collagen in my family's tea on a new brand's say-so.",
+  "objection": "It doesn't name the certifying body. With collagen the whole question is the source, and reviews on their own website don't tell me the certificate is real or current.",
+  "would_change_my_mind": "Seeing the named certifying body (one I recognise, like HMC or HFA) with a certificate I can verify on the certifier's own website, plus a full source and abattoir breakdown.",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 22,
+  "price_too_expensive": 30
+}

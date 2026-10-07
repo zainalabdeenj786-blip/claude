@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "I've already got a collagen in the cupboard that I take without thinking, so I'm not going to order another one this week. It does make me want to check whether mine is halal, and if it isn't I might switch when it runs out.",
+  "objection": "An unflavoured powder I have to remember to scoop into my tea every day sounds like a chore, and I don't know who certified it halal or if it actually does anything my current one doesn't.",
+  "would_change_my_mind": "Finding out my current collagen isn't halal, and seeing a recognised UK halal certifier named on the pack.",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 22,
+  "price_too_expensive": 30
+}

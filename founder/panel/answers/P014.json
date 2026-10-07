@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£18 for one pouch from a brand I've never heard of, on its own website and not on Amazon, plus I'd probably pay delivery because it's under £30. I'd rather wait for a halal collagen deal on Amazon or a Holland & Barrett offer.",
+  "objection": "I don't want to be pushed into a subscription to get the decent price, and I'm not sure collagen actually does much for my joints, so paying full whack to try it feels like a gamble.",
+  "would_change_my_mind": "A proper first-order deal without a subscription, like the first pouch for around £10 with free delivery, or seeing it on Amazon with reviews I trust.",
+  "price_too_cheap": 6,
+  "price_cheap": 11,
+  "price_expensive": 16,
+  "price_too_expensive": 22
+}

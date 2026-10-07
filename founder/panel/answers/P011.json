@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I'd want proper evidence that collagen powder actually does anything for my skin or joints before I commit to it monthly, and reviews on the brand's own site don't count as evidence to me. On top of that, an unflavoured scoop every single day sounds like a chore I'd give up on by week two.",
+  "objection": "Is there any real proof that drinking collagen peptides helps skin, hair or joints, or am I just paying for expensive protein that gets digested like anything else?",
+  "would_change_my_mind": "Independent clinical studies on this specific dose, plus the halal certifying body named clearly so I can check it myself.",
+  "price_too_cheap": 7,
+  "price_cheap": 11,
+  "price_expensive": 18,
+  "price_too_expensive": 25
+}

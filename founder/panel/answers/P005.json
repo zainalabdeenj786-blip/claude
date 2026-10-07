@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "I already have a collagen tub from Amazon that does the job and it's cheaper per gram, and £18 for 300g with no free delivery under £30 feels steep on my salary. Halal is nice, but honestly I haven't been checking so it's not enough to make me switch this week.",
+  "objection": "I could get a bigger tub cheaper on Amazon with next-day delivery, and I've never heard of RizqPure, so the 4.8 stars on their own site don't mean much to me.",
+  "would_change_my_mind": "Finding out my current collagen definitely isn't halal, plus seeing RizqPure on Amazon at a similar price per gram with Prime delivery.",
+  "price_too_cheap": 6,
+  "price_cheap": 11,
+  "price_expensive": 16,
+  "price_too_expensive": 22
+}

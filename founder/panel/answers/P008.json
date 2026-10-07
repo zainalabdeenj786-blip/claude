@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Eighteen quid a month on something just for me is hard to justify when the household budget comes first, and I'm not convinced a scoop of unflavoured powder in my tea does more for my joints than proper rest and protein. The halal part is good, but that alone doesn't get me to spend it.",
+  "objection": "I'd be paying every month for something I can't feel working, and I'd feel guilty putting that money on myself instead of the family. Plus unflavoured powder in my morning tea every day sounds like a chore I'd drop after a week.",
+  "would_change_my_mind": "A cheap trial size, like a week's worth for a few pounds, so I can see if it actually mixes into my tea fine and helps my recovery before committing to £14-18 a month.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 14,
+  "price_too_expensive": 20
+}

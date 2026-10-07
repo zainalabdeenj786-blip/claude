@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "It says halal-certified but doesn't say by whom, and I don't put anything bovine-derived in my family's mouths until I've seen the certifying body and checked it myself. On top of that, I'm not sure I'd keep up stirring a powder into my tea every day.",
+  "objection": "Halal-certified by who? Collagen is exactly the kind of product where the source gets murky, and 'halal-slaughtered' on a website isn't the same as a certificate from a body I recognise like HMC.",
+  "would_change_my_mind": "The name of a recognised certifying body with the certificate shown on the site, ideally HMC, plus confirmation of where the cattle and the processing come from.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 20,
+  "price_too_expensive": 28
+}

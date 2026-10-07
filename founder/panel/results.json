@@ -1,0 +1,157 @@
+{
+ "business": "RizqPure Halal Collagen (UK online supplement brand)",
+ "seed": 314815,
+ "dealt": 20,
+ "answered": 20,
+ "skipped": [],
+ "buys": 1,
+ "passes": 19,
+ "buy_rate": 0.05,
+ "by_segment": [
+  [
+   "Parent and household decision-maker",
+   6,
+   0.16666666666666666
+  ],
+  [
+   "Career-focused professional",
+   7,
+   0.0
+  ],
+  [
+   "Gym-goer focused on recovery",
+   4,
+   0.0
+  ],
+  [
+   "Has joint or mobility niggles",
+   3,
+   0.0
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Values-driven buyer",
+   2,
+   0.5
+  ],
+  [
+   "Family-first spender",
+   2,
+   0.0
+  ],
+  [
+   "Strict halal checker",
+   4,
+   0.0
+  ],
+  [
+   "Deal hunter",
+   3,
+   0.0
+  ],
+  [
+   "Already uses a non-halal collagen",
+   2,
+   0.0
+  ],
+  [
+   "Beauty and skincare enthusiast",
+   4,
+   0.0
+  ],
+  [
+   "Sceptical label reader",
+   3,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$43,000 and up",
+   7,
+   0.14285714285714285
+  ],
+  [
+   "$29,000 to $43,000",
+   7,
+   0.0
+  ],
+  [
+   "under $29,000",
+   6,
+   0.0
+  ]
+ ],
+ "why_not": [
+  [
+   "trust",
+   14,
+   [
+    "It just says 'halal-certified' and never says by who, so I can't be sure it's really halal. And £18 a month on collagen for myself is hard to justify when the family budget comes first.",
+    "Collagen for my joints after training is something I'd actually use, and £18 one-off is fair. But it says 'halal-certified' and doesn't tell me who by, and I don't put a supplement in my body until I know the certifying body."
+   ],
+   [
+    "P001",
+    "P002"
+   ]
+  ],
+  [
+   "price",
+   4,
+   [
+    "I already have a collagen tub from Amazon that does the job and it's cheaper per gram, and £18 for 300g with no free delivery under £30 feels steep on my salary. Halal is nice, but honestly I haven't been checking so it's not enough to make me switch this week.",
+    "Eighteen quid a month on something just for me is hard to justify when the household budget comes first, and I'm not convinced a scoop of unflavoured powder in my tea does more for my joints than proper rest and protein. The halal part is good, but that alone doesn't get me to spend it."
+   ],
+   [
+    "P005",
+    "P008"
+   ]
+  ],
+  [
+   "habit",
+   1,
+   [
+    "I've already got a collagen in the cupboard that I take without thinking, so I'm not going to order another one this week. It does make me want to check whether mine is halal, and if it isn't I might switch when it runs out."
+   ],
+   [
+    "P018"
+   ]
+  ]
+ ],
+ "why_yes": [
+  [
+   "values",
+   1,
+   [
+    "Proper halal-certified collagen is hard to find, and part of every sale going to feed families is exactly the kind of brand I want to back, so I'd try one pouch at £18. I'm not signing up to a subscription until I know I'll actually take it every day."
+   ],
+   [
+    "P017"
+   ]
+  ]
+ ],
+ "flip": [
+  "Seeing the named halal certification body and the certificate, and someone in my family WhatsApp group saying they've used it and it worked.",
+  "The certifying body named clearly on the pouch and the site, one I recognise like HMC or HFA, with the certificate I can check. Then I'd buy one pouch, not the subscription.",
+  "Someone in the family WhatsApp group saying they've used it and it helped, or seeing it on offer on Amazon with independent reviews.",
+  "Seeing the named certifying body (one I recognise, like HMC or HFA) with a certificate I can verify on the certifier's own website, plus a full source and abattoir breakdown.",
+  "Finding out my current collagen definitely isn't halal, plus seeing RizqPure on Amazon at a similar price per gram with Prime delivery.",
+  "The certifying body named on the pouch with the certificate on the site, ideally plus a Muslim creator I trust actually using it for a few weeks.",
+  "Independent third-party lab test results for the actual product plus a link to decent clinical studies on collagen peptides at this dose, so I'd know it does something.",
+  "A cheap trial size, like a week's worth for a few pounds, so I can see if it actually mixes into my tea fine and helps my recovery before committing to £14-18 a month.",
+  "The certifying body named on the pouch and site (one I recognise, like HMC), plus a cousin in the WhatsApp group saying it actually helped her knees after a couple of months.",
+  "Seeing it on Amazon or in Holland & Barrett at a proper intro offer, say under £12 a pouch, with reviews I can trust.",
+  "Independent clinical studies on this specific dose, plus the halal certifying body named clearly so I can check it myself.",
+  "Independent clinical evidence for the actual product or dose, plus the halal certifier named so I can check it myself, and ideally a cheaper trial size so I'm not committing to a full pouch.",
+  "Seeing the certifying body's name and the actual certificate on the site, plus a Muslim beauty creator I trust or someone in my WhatsApp group saying they've used it and seen results.",
+  "A proper first-order deal without a subscription, like the first pouch for around £10 with free delivery, or seeing it on Amazon with reviews I trust.",
+  "The certifying body named on the pouch with the certificate on the site, plus a Muslim beauty creator I trust using it for a few weeks and showing results.",
+  "A Muslim beauty creator I already follow using it for a few weeks and showing results, plus the name of the halal certifier on the pack.",
+  "Finding out my current collagen isn't halal, and seeing a recognised UK halal certifier named on the pack.",
+  "Seeing the named halal certifier and that it's actually Muslim-owned, ideally vouched for by someone I follow or at the mosque, or a smaller trial size so I'm not risking the full £18.",
+  "The name of a recognised certifying body with the certificate shown on the site, ideally HMC, plus confirmation of where the cattle and the processing come from."
+ ],
+ "purchases_first_month_per_buyer": 1.0,
+ "price_answers": 20
+}

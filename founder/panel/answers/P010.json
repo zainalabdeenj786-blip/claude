@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "£18 for 300g is steep when I can get a 500g-plus tub of grass-fed collagen on Amazon for about the same, often on offer. The halal bit is nice but I'm not paying a premium and chasing a £30 free-delivery threshold for a brand I've never heard of.",
+  "objection": "I could get a bigger tub cheaper on Amazon, and a 4.8 from reviews on their own site doesn't tell me much.",
+  "would_change_my_mind": "Seeing it on Amazon or in Holland & Barrett at a proper intro offer, say under £12 a pouch, with reviews I can trust.",
+  "price_too_cheap": 6,
+  "price_cheap": 11,
+  "price_expensive": 16,
+  "price_too_expensive": 22
+}

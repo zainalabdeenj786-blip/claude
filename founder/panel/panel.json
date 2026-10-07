@@ -1,0 +1,103 @@
+{
+ "n": 20,
+ "seed": 314815,
+ "customer": {
+  "business": "RizqPure Halal Collagen (UK online supplement brand)",
+  "target": "UK Muslims aged 22 to 55 who care about halal, want help with skin, hair, nails or joints, and shop online",
+  "where": "UK-wide, online (London, Birmingham, Manchester, Bradford, Leicester and similar cities over-represented)",
+  "age": [
+   22,
+   55
+  ],
+  "segments": [
+   {
+    "name": "Career-focused professional",
+    "share": 0.35,
+    "income": [
+     22000,
+     48000
+    ]
+   },
+   {
+    "name": "Parent and household decision-maker",
+    "share": 0.3,
+    "income": [
+     18000,
+     55000
+    ]
+   },
+   {
+    "name": "Gym-goer focused on recovery",
+    "share": 0.2,
+    "income": [
+     20000,
+     60000
+    ]
+   },
+   {
+    "name": "Has joint or mobility niggles",
+    "share": 0.15,
+    "income": [
+     20000,
+     65000
+    ]
+   }
+  ],
+  "behaviours": [
+   {
+    "name": "Strict halal checker",
+    "share": 0.22,
+    "how": "Checks the certifying body on every supplement and avoids anything with gelatine or unclear sources."
+   },
+   {
+    "name": "Beauty and skincare enthusiast",
+    "share": 0.18,
+    "how": "Follows Muslim beauty creators on TikTok and Instagram and tries what they recommend."
+   },
+   {
+    "name": "Sceptical label reader",
+    "share": 0.15,
+    "how": "Wants evidence that a supplement works before paying for it monthly."
+   },
+   {
+    "name": "Deal hunter",
+    "share": 0.15,
+    "how": "Buys supplements on Amazon or at Holland & Barrett when they are on offer."
+   },
+   {
+    "name": "Already uses a non-halal collagen",
+    "share": 0.1,
+    "how": "Takes a mainstream collagen and has not looked hard at whether it is halal."
+   },
+   {
+    "name": "Values-driven buyer",
+    "share": 0.1,
+    "how": "Prefers Muslim-owned brands and businesses that give back, especially in Ramadan."
+   },
+   {
+    "name": "Family-first spender",
+    "share": 0.1,
+    "how": "Puts the household budget first and feels guilty spending on themselves."
+   }
+  ],
+  "objections": [
+   "How do I know it is really halal? Who certified it?",
+   "£18 a month is a lot for something I am not sure works",
+   "Collagen is just protein, does it actually do anything for skin or joints?",
+   "I have never heard of this brand",
+   "Unflavoured powder sounds like a hassle to take every day",
+   "I could get a bigger tub cheaper on Amazon",
+   "I don't want to be locked into a subscription"
+  ],
+  "habits": [
+   "you shop on Amazon most weeks",
+   "you scroll TikTok in the evening",
+   "you have a coffee or tea every morning",
+   "you go to the gym three times a week",
+   "you buy groceries at a local halal butcher and supermarket",
+   "you give sadaqah regularly, more in Ramadan",
+   "you have a WhatsApp group with sisters or cousins who share product tips"
+  ]
+ },
+ "pitch": "RizqPure Halal Collagen: a 300g pouch of unflavoured grass-fed bovine collagen peptides with vitamin C and biotin, 30 daily servings (one scoop in tea, coffee, a smoothie or water).\nThe cattle are halal-slaughtered and the product is halal-certified. Sold online at rizqpure.com.\n£18 for one pouch, or £14.40 a month on Subscribe & Save (20% off, cancel any time). Free UK delivery on orders over £30. 30-day hassle-free returns.\nPart of every sale pays for meals for families in need. The site shows 4.8/5 from 320+ reviews."
+}
