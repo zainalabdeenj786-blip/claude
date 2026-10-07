@@ -93,7 +93,7 @@ When there's nothing new to say: packing day, a certificate audit, the founder a
 
 ## 4. Budget and numbers
 
-**The most you can pay to win a customer.** From the CFO: each pouch leaves £7.03 before marketing (£4.03 contribution + the £3 marketing already in it). If a customer buys about 3 pouches on average (an ASSUMPTION: replace it with your real repeat rate), they are worth about £21 before marketing. To keep about half of it, **cap cost per customer at about £10.50**, and cost per trial at about £10.50 × your trial → pouch conversion (at 30%, about £3.15 per trial).
+**The most you can pay to win a customer.** From the CFO: each pouch leaves £9.28 before marketing (£6.28 contribution + the £3 marketing already in it). An average order is 1.75 pouches (your even mix), so a first order is worth about £16 before marketing. If a customer buys about 3 pouches in total (an ASSUMPTION: replace it with your real repeat rate), they are worth about £28. To keep about half of it, **cap cost per new customer at about £14**, and cost per trial at about £14 × your trial → first-order conversion (at 30%, about £4.20 per trial).
 
 **Monthly split (EST, at about £600/month on marketing):**
 
@@ -109,7 +109,7 @@ When there's nothing new to say: packing day, a certificate audit, the founder a
 | number | change something when |
 | --- | --- |
 | Trial → first pouch conversion | under 20% after 3 weeks: fix the day-5 email and the mixing experience first, not the ads |
-| Cost per first pouch (all marketing ÷ first pouches) | over £10.50 |
+| Cost per new customer (all marketing ÷ first orders) | over £14 |
 | Subscriber month-2 retention | under 60% |
 
 Panel quotes are research, not testimonials. Never use them in ads.

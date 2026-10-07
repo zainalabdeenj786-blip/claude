@@ -1,30 +1,18 @@
 {
-  "business": "RizqPure Halal Collagen (pouch cost from founder; other costs ESTIMATES)",
+  "business": "RizqPure Halal Collagen (founder pricing and pouch cost; postage, marketing and volume are ESTIMATES)",
   "unit": "pouch",
-  "price": 16.65,
+  "price": 15.34,
   "variable": [
     {
-      "label": "Filled pouch, delivered to RizqPure (founder, 2026-10-07)",
-      "cost": 6.0
+      "label": "Filled pouch, delivered to RizqPure (founder: US$6 at ~0.75 \u00a3/$)",
+      "cost": 4.5
     },
     {
-      "label": "Mailer + scoop + insert (EST)",
-      "cost": 0.45
+      "label": "Royal Mail postage per pouch, blended over bundles (EST)",
+      "cost": 1.56
     },
     {
-      "label": "Royal Mail postage, blended (EST)",
-      "cost": 2.1
-    },
-    {
-      "label": "Card fees ~2% + 25p (EST)",
-      "cost": 0.57
-    },
-    {
-      "label": "Meals donation (EST)",
-      "cost": 0.5
-    },
-    {
-      "label": "Blended marketing per pouch sold (EST)",
+      "label": "Marketing per pouch sold (EST)",
       "cost": 3.0
     }
   ],

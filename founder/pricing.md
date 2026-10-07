@@ -20,30 +20,42 @@ Three inputs: what the panel said (`pricing-curve.md`), what competitors charge 
 
 So £18 is in the lower third of the halal market. RizqPure isn't expensive. It's cheap for what it claims, and it lacks the proof that would justify a higher price.
 
-**The business** (CFO tool: pouch £6.00 from the founder, other costs estimated, 20 a day):
+**The business** (CFO tool and per-order maths: your prices and pouch cost of US$6 ≈ £4.50; postage and £3 marketing per pouch estimated):
 
-| price per pouch | contribution | break-even/day | year 1 profit |
-| ---: | ---: | ---: | ---: |
-| £14.40 (today's subscription, 20% off) | £1.78 (12%) | 12 | £1,664 |
-| £15.30 (15% off) | £2.68 (18%) | 8 | £6,146 |
-| £16.65 (blend: half £18, half £15.30) | £4.03 (24%) | 5 | £12,869 |
-| £18.00 | £5.38 (30%) | 4 | £19,592 |
-| £20.00 | £7.38 (37%) | 3 | £29,552 |
+| order | price | per pouch | earns per order | earns per pouch |
+| --- | ---: | ---: | ---: | ---: |
+| Single | £18 | £18.00 | £8.40 | £8.40 |
+| 2-pack | £30 | £15.00 | £11.80 | £5.90 |
+| 3-pack | £45 | £15.00 | £19.00 | £6.33 |
+| 2-pack at £32 (proposed) | £32 | £16.00 | £13.80 | £6.90 |
+| Subscription | £14.40 | £14.40 | £4.80 | £4.80 |
+| Subscription at £15.30 (proposed) | £15.30 | £15.30 | £5.70 | £5.70 |
+
+| blended price per pouch (even mix) | each pouch leaves | break-even/day | year 1 profit |
+| --- | ---: | ---: | ---: |
+| £15.34 (today) | £6.28 (41%) | 4 | £24,074 |
+| £15.63 (2-pack at £32) | £6.57 (42%) | 4 | £25,519 |
+| **£15.76 (2-pack £32 + subscription £15.30)** | **£6.70 (43%)** | 3 | **£26,166** |
+
+So £18 is in the lower third of the halal market, and your bundles bring the average down to about £15 a pouch. RizqPure isn't expensive. It's cheap for what it claims, and it lacks the proof (a named certifier) that would justify charging more.
 
 ## 1. The price
 
-- **One pouch: keep £18** for now. It's within the panel's range, below its "getting expensive" median of £20, and £7 under Beauvyn, the only competitor that names its certifier. Once the certificate is on the pack, RizqPure has more proof than Beauvyn at a lower price.
-- **Subscription: £15.30 (15% off) with free delivery, instead of £14.40 (20% off).** The 20% discount leaves only £1.78 a pouch at your £6 pouch cost, and free delivery on subscriptions was an objection the panel raised. The cut costs subscribers £0.90 a pouch and gives them free delivery.
-- **Fix the delivery wording.** The site says both "Free Standard Shipping" and "Free UK delivery over £30" (`competitors.md`). Pick one. Recommended: free delivery on subscriptions and the trial, £2.95 on a one-off pouch under £30 (check the cost against your real postage).
+- **Single pouch: keep £18.** It's your best earner per pouch (£8.40) and within the panel's range.
+- **2-pack: keep £30** (£15 a pouch). It's a big seller and a clear step down from £18.
+- **Fix the bundle ladder: 2-pack £32 (£16 a pouch), 3-pack stays £45 (£15 a pouch).** Today both bundles cost £15 a pouch, so a third pouch gives no extra reason to buy. Raising only the 3-pack to £48 would make it *dearer* per pouch (£16) than the 2-pack: an upside-down ladder. If you do want the 3-pack higher, raise the 2-pack with it (e.g. £34 and £48 = £17 and £16 a pouch).
+- **Subscription: £15.30 (15% off) with free delivery, instead of £14.40.** It's your lowest earner per pouch (£4.80). Better still: **subscribe to the 2-pack**, which halves the postage per pouch.
+- **Fix the delivery wording.** The site says both "Free Standard Shipping" and "Free UK delivery over £30" (`competitors.md`). With bundles at £30 and £45, "free delivery on bundles and subscriptions" is clear and honest.
 
 ## 2. The ladder
 
-| rung | price | why step up |
-| --- | ---: | --- |
-| **7-day trial** | £4.95, free delivery, credited to the first pouch | "Does it dissolve in my chai? Is the certifier one I trust?" |
-| **One pouch** | £18 (+ delivery) | Try a month with no commitment |
-| **Subscription, 1 pouch/month** | £15.30, free delivery, reminder before every charge, cancel in one click | Saves £2.70 + delivery every month |
-| **Family subscription, 2 pouches/month** | £28.90 (£14.45 each), free delivery | For the household. Answers the "family first" guilt (0 of 2 family-first spenders bought in either round). One parcel spreads postage: check the cost on real postage before launch |
+| rung | price | per pouch | why step up |
+| --- | ---: | ---: | --- |
+| **7-day trial** | £4.95, free delivery, credited to the first order | | "Does it dissolve in my chai? Is the certifier one I trust?" |
+| **One pouch** | £18 | £18 | Try a month, no commitment |
+| **2-pack** | £32 | £16 | Two months, or one for you and one for your sister or mum |
+| **3-pack** | £45 | £15 | Best value. Three months is the honest time joints take |
+| **Subscription (1 or 2 pouches a month)** | £15.30 a pouch, free delivery, reminder before every charge, cancel in one click | £15.30 | Never run out. Subscribing to the 2-pack is the best deal for the household |
 
 ## 3. The opening offer
 
@@ -51,9 +63,10 @@ The **£4.95 trial** is the opening offer. It's permanent, not a discount, so it
 
 ## 4. What to test with real buyers
 
-1. **One pouch at £18 vs £20.** Split traffic on the product page for 4 weeks after relaunch, or run one price per channel (creator codes vs email). Watch conversion and refund rate. If £20 converts at 85% or more of £18's rate, £20 earns more (CFO: £7.38 vs £5.38 a pouch).
-2. **Subscription discount, 15% vs 10%,** for new subscribers only. Watch subscription take-up and month-2 retention.
-3. **Trial at £4.95 vs free with £2.95 delivery.** Watch cost per trial and trial → pouch conversion.
+1. **One pouch at £18 vs £20.** Split traffic on the product page for 4 weeks after relaunch, or run one price per channel (creator codes vs email). Watch conversion and refund rate. With your costs, a single pouch at £20 earns £10.40 against £8.40 at £18, so £20 wins if it keeps at least 81% of the orders.
+2. **Bundle ladder: 2-pack £32 + 3-pack £45, vs 2-pack £34 + 3-pack £48.** Watch the share of orders that are 3-packs and the average order value.
+3. **Subscription discount, 15% vs 10%,** for new subscribers only. Watch subscription take-up and month-2 retention.
+4. **Trial at £4.95 vs free with £2.95 delivery.** Watch cost per trial and trial → pouch conversion.
 
 ## 5. The panel's price objections (verbatim, for marketing to answer)
 

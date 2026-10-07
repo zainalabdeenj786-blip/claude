@@ -2,19 +2,19 @@
 
 **Verdict: Not yet**
 
-- ✓ Each pouch earns £4.03 before fixed costs (24% contribution).
-- ✓ Year 1 operating profit: £12,869.
+- ✓ Each pouch earns £6.28 before fixed costs (41% contribution).
+- ✓ Year 1 operating profit: £24,074.
 - ✗ 1 of 20 simulated buyers buy (5%, the bar is 25%).
 
 | key number | |
 | --- | ---: |
-| Price | £16.65 a pouch |
-| Profit margin at plan | 18% per pouch |
-| Break-even | 5 pouchs a day |
-| Year 1 operating profit | £12,869 |
+| Price | £15.34 a pouch |
+| Profit margin at plan | 34% per pouch |
+| Break-even | 4 pouchs a day |
+| Year 1 operating profit | £24,074 |
 | Startup spend | £5,000 |
 | Cash needed before it pays for itself | £5,000 |
-| Startup money earned back | month 8 |
+| Startup money earned back | month 5 |
 | Buyer panel | 1 buy · 19 pass |
 
 ## The idea
@@ -41,12 +41,12 @@ Source: rizqpure.com and rizqpure.com/products/rizqpure-halal-collagen, read 202
 
 ## Summary
 
-**RizqPure** sells halal grass-fed bovine collagen powder (10g a day, with vitamin C and biotin) online to UK Muslims, at £18 a pouch. It is already trading.
+**RizqPure** sells halal grass-fed bovine collagen powder (10g a day, with vitamin C and biotin) online to UK Muslims, at £18 a pouch, £30 for two and £45 for three, or £14.40 on subscription. It is already trading.
 
 **Verdict: Not yet.** It isn't failing on money. It fails because buyers can't see the proof that the brand's whole promise rests on.
 
-- **Margin:** each pouch leaves **£4.03 (24%)** after its own costs, at a blended £16.65. The £6 pouch cost is yours; postage, fees and marketing are still **estimates**. Today's £14.40 subscription leaves only **£1.78** a pouch.
-- **Break-even:** **5 pouches a day**. At a plan of 20 a day, **year 1 makes £12,869** on £82,917 revenue.
+- **Margin:** each pouch leaves **£6.28 (41%)** after its own costs, averaged over your four order types (£15.34 a pouch). Your prices, mix and US£6 pouch cost (about £4.50) are real; postage and marketing are still **estimates**. The subscription is the weakest order, at £4.80 a pouch.
+- **Break-even:** **4 pouches a day**. At a plan of 20 a day, **year 1 makes £24,074** on £76,393 revenue. Pricing the 2-pack at £32 and the subscription at £15.30 takes that to **£26,166** (`pricing.md`).
 - **Buyer panel (today's offer):** **1 of 20 buys (5%)**, below the 25% bar. 14 of the 19 who passed gave the same reason: *"halal-certified… by whom?"*
 
 **Where the board and the panel agree:** the hidden certifier is the problem. All three board members said so ("for this buyer, the halal certificate is the product"), and so did 14 of 19 buyers. Today the product page says "Contact us and we will share our certification." Both also flagged the health claims ("stronger joints", "firmer skin") as unlikely to be allowed in GB as written.
@@ -55,9 +55,9 @@ Source: rizqpure.com and rizqpure.com/products/rizqpure-halal-collagen, read 202
 
 **What changes the result:** with the certifier named on the pouch, a £4.95 trial pack, free subscription delivery and a 60-day guarantee, the same 20 buyers went from **5% to 60%**. But every one of those 12 bought only the trial, so this shows the block is removable. It doesn't show the business is profitable. Competitors confirm the opening: only one halal collagen names its certifier on its product page (Beauvyn, £24.99, new), and the market's biggest complaint is subscription traps (23 reviews).
 
-**Biggest risk:** marketing cost per pouch. At £6 instead of the estimated £3, year 1 **loses £2,071**. Close behind is the halal status being publicly questioned, which is the brand's only moat. Fixing the certifier is what lowers both risks.
+**Biggest risk:** marketing cost per pouch. At £6 instead of the estimated £3, year 1 profit falls to **£9,134**; add a 15% rise in unit costs (or a weaker pound) and it falls to about £126. Close behind is the halal status being publicly questioned, which is the brand's only moat. Fixing the certifier is what lowers both risks.
 
-**What you need to start:** about **£5,000** for the fixes (pack reprint with the certificate seal, a lab test, trial sachets, a claims review, a launch push). On these numbers it is earned back in month 8. Then a real test: **150 paid £4.95 trial pre-orders in 3 weeks from organic channels** (`launch.md`), before printing anything.
+**What you need to start:** about **£5,000** for the fixes (pack reprint with the certificate seal, a lab test, trial sachets, a claims review, a launch push). On these numbers it is earned back in month 5. Then a real test: **150 paid £4.95 trial pre-orders in 3 weeks from organic channels** (`launch.md`), before printing anything.
 
 **The one thing to do this week:** confirm in writing which body certifies your collagen and what the certificate covers (the bovine source, the slaughter and whether it was stunned, the plant), and put it on the product page. If it's a body your buyers don't recognise, changing certifier comes before everything else in this plan.
 
@@ -299,30 +299,42 @@ Three inputs: what the panel said (`pricing-curve.md`), what competitors charge 
 
 So £18 is in the lower third of the halal market. RizqPure isn't expensive. It's cheap for what it claims, and it lacks the proof that would justify a higher price.
 
-**The business** (CFO tool: pouch £6.00 from the founder, other costs estimated, 20 a day):
+**The business** (CFO tool and per-order maths: your prices and pouch cost of US£6 ≈ £4.50; postage and £3 marketing per pouch estimated):
 
-| price per pouch | contribution | break-even/day | year 1 profit |
-| ---: | ---: | ---: | ---: |
-| £14.40 (today's subscription, 20% off) | £1.78 (12%) | 12 | £1,664 |
-| £15.30 (15% off) | £2.68 (18%) | 8 | £6,146 |
-| £16.65 (blend: half £18, half £15.30) | £4.03 (24%) | 5 | £12,869 |
-| £18.00 | £5.38 (30%) | 4 | £19,592 |
-| £20.00 | £7.38 (37%) | 3 | £29,552 |
+| order | price | per pouch | earns per order | earns per pouch |
+| --- | ---: | ---: | ---: | ---: |
+| Single | £18 | £18.00 | £8.40 | £8.40 |
+| 2-pack | £30 | £15.00 | £11.80 | £5.90 |
+| 3-pack | £45 | £15.00 | £19.00 | £6.33 |
+| 2-pack at £32 (proposed) | £32 | £16.00 | £13.80 | £6.90 |
+| Subscription | £14.40 | £14.40 | £4.80 | £4.80 |
+| Subscription at £15.30 (proposed) | £15.30 | £15.30 | £5.70 | £5.70 |
+
+| blended price per pouch (even mix) | each pouch leaves | break-even/day | year 1 profit |
+| --- | ---: | ---: | ---: |
+| £15.34 (today) | £6.28 (41%) | 4 | £24,074 |
+| £15.63 (2-pack at £32) | £6.57 (42%) | 4 | £25,519 |
+| **£15.76 (2-pack £32 + subscription £15.30)** | **£6.70 (43%)** | 3 | **£26,166** |
+
+So £18 is in the lower third of the halal market, and your bundles bring the average down to about £15 a pouch. RizqPure isn't expensive. It's cheap for what it claims, and it lacks the proof (a named certifier) that would justify charging more.
 
 ### 1. The price
 
-- **One pouch: keep £18** for now. It's within the panel's range, below its "getting expensive" median of £20, and £7 under Beauvyn, the only competitor that names its certifier. Once the certificate is on the pack, RizqPure has more proof than Beauvyn at a lower price.
-- **Subscription: £15.30 (15% off) with free delivery, instead of £14.40 (20% off).** The 20% discount leaves only £1.78 a pouch at your £6 pouch cost, and free delivery on subscriptions was an objection the panel raised. The cut costs subscribers £0.90 a pouch and gives them free delivery.
-- **Fix the delivery wording.** The site says both "Free Standard Shipping" and "Free UK delivery over £30" (`competitors.md`). Pick one. Recommended: free delivery on subscriptions and the trial, £2.95 on a one-off pouch under £30 (check the cost against your real postage).
+- **Single pouch: keep £18.** It's your best earner per pouch (£8.40) and within the panel's range.
+- **2-pack: keep £30** (£15 a pouch). It's a big seller and a clear step down from £18.
+- **Fix the bundle ladder: 2-pack £32 (£16 a pouch), 3-pack stays £45 (£15 a pouch).** Today both bundles cost £15 a pouch, so a third pouch gives no extra reason to buy. Raising only the 3-pack to £48 would make it *dearer* per pouch (£16) than the 2-pack: an upside-down ladder. If you do want the 3-pack higher, raise the 2-pack with it (e.g. £34 and £48 = £17 and £16 a pouch).
+- **Subscription: £15.30 (15% off) with free delivery, instead of £14.40.** It's your lowest earner per pouch (£4.80). Better still: **subscribe to the 2-pack**, which halves the postage per pouch.
+- **Fix the delivery wording.** The site says both "Free Standard Shipping" and "Free UK delivery over £30" (`competitors.md`). With bundles at £30 and £45, "free delivery on bundles and subscriptions" is clear and honest.
 
 ### 2. The ladder
 
-| rung | price | why step up |
-| --- | ---: | --- |
-| **7-day trial** | £4.95, free delivery, credited to the first pouch | "Does it dissolve in my chai? Is the certifier one I trust?" |
-| **One pouch** | £18 (+ delivery) | Try a month with no commitment |
-| **Subscription, 1 pouch/month** | £15.30, free delivery, reminder before every charge, cancel in one click | Saves £2.70 + delivery every month |
-| **Family subscription, 2 pouches/month** | £28.90 (£14.45 each), free delivery | For the household. Answers the "family first" guilt (0 of 2 family-first spenders bought in either round). One parcel spreads postage: check the cost on real postage before launch |
+| rung | price | per pouch | why step up |
+| --- | ---: | ---: | --- |
+| **7-day trial** | £4.95, free delivery, credited to the first order | | "Does it dissolve in my chai? Is the certifier one I trust?" |
+| **One pouch** | £18 | £18 | Try a month, no commitment |
+| **2-pack** | £32 | £16 | Two months, or one for you and one for your sister or mum |
+| **3-pack** | £45 | £15 | Best value. Three months is the honest time joints take |
+| **Subscription (1 or 2 pouches a month)** | £15.30 a pouch, free delivery, reminder before every charge, cancel in one click | £15.30 | Never run out. Subscribing to the 2-pack is the best deal for the household |
 
 ### 3. The opening offer
 
@@ -330,9 +342,10 @@ The **£4.95 trial** is the opening offer. It's permanent, not a discount, so it
 
 ### 4. What to test with real buyers
 
-1. **One pouch at £18 vs £20.** Split traffic on the product page for 4 weeks after relaunch, or run one price per channel (creator codes vs email). Watch conversion and refund rate. If £20 converts at 85% or more of £18's rate, £20 earns more (CFO: £7.38 vs £5.38 a pouch).
-2. **Subscription discount, 15% vs 10%,** for new subscribers only. Watch subscription take-up and month-2 retention.
-3. **Trial at £4.95 vs free with £2.95 delivery.** Watch cost per trial and trial → pouch conversion.
+1. **One pouch at £18 vs £20.** Split traffic on the product page for 4 weeks after relaunch, or run one price per channel (creator codes vs email). Watch conversion and refund rate. With your costs, a single pouch at £20 earns £10.40 against £8.40 at £18, so £20 wins if it keeps at least 81% of the orders.
+2. **Bundle ladder: 2-pack £32 + 3-pack £45, vs 2-pack £34 + 3-pack £48.** Watch the share of orders that are 3-packs and the average order value.
+3. **Subscription discount, 15% vs 10%,** for new subscribers only. Watch subscription take-up and month-2 retention.
+4. **Trial at £4.95 vs free with £2.95 delivery.** Watch cost per trial and trial → pouch conversion.
 
 ### 5. The panel's price objections (verbatim, for marketing to answer)
 
@@ -400,7 +413,7 @@ Same 20 buyer cards (seed 314815). Results: `panel-v2/results.md`.
 
 ### Costs to check with the CFO
 
-- Trial pack: 7 x 10g sachets + letterbox mailer + postage ≈ £1.40 collagen (from your £6 pouch) + £0.60 packing + £1.20 postage = **about £3.20 (ESTIMATE)** against £4.95. It roughly breaks even before marketing. It only pays if enough trial buyers convert to a pouch: **measure trial → pouch conversion from day one.**
+- Trial pack: 7 x 10g sachets + letterbox mailer + postage ≈ £1.05 collagen (from your US£6 ≈ £4.50 pouch) + £0.60 sachets and packing + £1.20 postage = **about £2.85 (ESTIMATE)** against £4.95. It roughly breaks even before marketing. It only pays if enough trial buyers convert to a pouch: **measure trial → pouch conversion from day one.**
 - Free subscription delivery: already in the CFO's blended £2.10 postage estimate.
 - Subscription discount cut from 20% to 15% (£15.30): pays for the free delivery.
 
@@ -415,34 +428,42 @@ Not legal advice. Have the claims and the guarantee terms checked against UK con
 
 ## The numbers
 
-**The pouch cost is real (£6.00 delivered to you, from the founder on 2026-10-07). Every other cost is still an estimate (marked EST) until you replace it.** Add your postage, Shopify fees and ad spend to `founder/numbers.json`, then re-run: `python3 .claude/skills/founder-cfo/unit_economics.py founder/numbers.json --out founder/cfo.md`.
+**Real inputs from you:** your prices (£18 single, £30 for a 2-pack, £45 for a 3-pack, £14.40 subscription), an even sales mix, a pouch cost of US£6 (about **£4.50**), and no mailer, card-fee or donation costs. **Still estimates:** postage, marketing per pouch, monthly costs and volume. Full list: `cfo-sources.md`.
 
-**Price used:** a blended **£16.65** a pouch, half at £18 one-off and half at £15.30 on subscription (15% off, see `pricing.md`). The 50/50 mix is an assumption.
+**Price used:** £15.34 a pouch, the average over your four order types (7 pouches for £107.40).
 
-- **The margin.** Each pouch leaves **£4.03 (24%)** after its own costs, including an estimated £3 of marketing per pouch. At 20 pouches a day, the profit margin is **18%** and year 1 makes **£12,869** on £82,917 of revenue. Break-even is **5 pouches a day**.
-- **Today's subscription price barely works.** At £14.40 (20% off), each pouch leaves only **£1.78 (12%)**, break-even is **12 a day**, and year 1 makes **£1,664**. At £15.30 (15% off) each pouch leaves **£2.68**. At £18 one-off it leaves **£5.38**. Every subscriber you add at 20% off earns almost nothing once postage and marketing are paid.
-- **The line to watch is marketing cost per pouch.** At £6 per pouch instead of £3, contribution falls to **£1.03 (6%)**, break-even rises to **20 a day** (your whole plan), and year 1 **loses £2,071**. The pouch cost leaves no room for expensive ads.
-- **Unit costs are now the second line to watch.** If unit costs rise 15%, the margin at plan falls from 18% to **7%** and year 1 makes **£3,442**. Get a second supplier quote at the same certifier, and ask your supplier what price you'd pay at a higher order quantity.
-- **Cash.** You need **£5,000** for the one-off spend (pack reprint, lab test, trial sachets, claims review, a launch push). On these numbers it is earned back in **month 8**. At half the planned volume, year 1 makes £2,835 and the spend is not earned back in year 1.
-- **The £4.95 trial pack is not in these numbers.** At £6 a pouch, collagen costs £0.20 per 10g, so 7 sachets cost about £1.40, plus packing (about £0.60) and postage (about £1.20, EST), roughly **£3.20**. It breaks even before marketing and pays only if trial buyers go on to buy pouches.
+- **The margin.** Each pouch leaves **£6.28 (41%)** after its own costs. At 20 pouches a day, the profit margin is **34%** and year 1 makes **£24,074** on £76,393 revenue. Break-even is **4 pouches a day**. The £5,000 one-off spend is earned back in **month 5**.
+- **What each order earns** (after pouches, postage and £3 marketing per pouch):
+
+  | order | price | earns | per pouch |
+  | --- | ---: | ---: | ---: |
+  | Single | £18 | £8.40 | £8.40 |
+  | 2-pack | £30 | £11.80 | £5.90 |
+  | 3-pack | £45 | £19.00 | £6.33 |
+  | Subscription | £14.40 | £4.80 | **£4.80** (lowest) |
+
+  The subscription is your weakest order: the lowest price, with full postage on a single pouch.
+- **The line to watch is still marketing per pouch.** At £6 instead of £3, each pouch leaves **£3.28**, break-even rises to **7 a day**, and year 1 makes **£9,134**. If on top of that unit costs rise 15%, year 1 makes just **£126**.
+- **Exchange rate.** You pay in dollars. A 10% weaker pound puts the pouch at about £4.95 and takes about £0.45 off each pouch. Watch it when you reorder.
+- **Cash.** £5,000 for the fixes, earned back in month 5. At half the planned volume, year 1 makes £8,437 and the spend is earned back in month 10.
 
 ### Three ways to improve the margin (each one run, not guessed)
 
-1. **Subscription at 15% off, not 20%.** Already in the plan: each subscription pouch goes from £1.78 to £2.68. Consider **10% off (£16.20) with free delivery and the subscription that respects you**. Competitors' subscribers pay £24 or more (`competitors.md`).
-2. **Test £20 one-off.** At £20 for every pouch, each pouch leaves **£7.38** and year 1 makes **£29,552** (`--price 20`). Halal-claiming competitors charge a median of £27.50 per 30 × 10g. Run the test in `pricing.md` before changing the price.
-3. **Cut the pouch cost or marketing per pouch.** Each £1 off either one is worth about £7,300 a year at the plan volume. On marketing: creators paid per sale, referrals, sampling at mosques and community events. On the pouch: a volume price, or a second quote.
+1. **Fix the bundle ladder: 2-pack £32, 3-pack stays £45**, so each step up saves more per pouch. The blended price becomes £15.63, each pouch leaves **£6.57**, and year 1 makes **£25,519** (+£1,445). Raising only the 3-pack to £48 would make it dearer per pouch than the 2-pack (see `pricing.md`).
+2. **Subscription at £15.30 (15% off) with free delivery.** Each subscription pouch goes from £4.80 to £5.70. Together with the £32 2-pack, the blended price is £15.76 and year 1 makes **£26,166**.
+3. **Bring marketing per pouch down.** Each £1 saved is worth about £7,300 a year at plan. Bundles already help: the cost of winning a customer is spread over 2–3 pouches.
 
 ### The board's money conditions
 
-- Unit economics at each price: **done. The pouch cost is real; the other costs are estimates.**
-- Customer lifetime value pays back the cost of winning a customer: **open.** Needs your real repeat rate and cost per customer. At today's £14.40 subscription it is unlikely.
-- Guarantee cost: 60 days at a 5% claim rate costs about £0.83 per pouch. That's affordable only if marketing stays near £3 a pouch and the subscription is £15.30 or more.
+- Unit economics at each price: **done, on your real prices and pouch cost.** Postage and marketing are still estimates.
+- Lifetime value pays back the cost of winning a customer: **open.** Needs your real repeat rate and cost per customer. Bundles make this easier.
+- Guarantee cost: 60 days at a 5% claim rate costs about £0.77 a pouch (5% of £15.34). That's affordable at these margins.
 
-Not financial or tax advice. An accountant should check VAT and how the business is set up before money moves. Supplements are usually standard-rated, so check whether your £18 includes VAT; if it does, revenue per pouch after VAT is £15.
+Not financial or tax advice. Have an accountant check VAT and the structure before money moves.
 
 ---
 
-## Unit economics: RizqPure Halal Collagen (pouch cost from founder; other costs ESTIMATES)
+## Unit economics: RizqPure Halal Collagen (founder pricing and pouch cost; postage, marketing and volume are ESTIMATES)
 
 Every number below comes from the input file. Nothing is looked up or guessed.
 
@@ -450,52 +471,49 @@ Every number below comes from the input file. Nothing is looked up or guessed.
 
 | line | per pouch |
 | --- | ---: |
-| Price | £16.65 |
-| Filled pouch, delivered to RizqPure (founder, 2026-10-07) | -£6.00 |
-| Mailer + scoop + insert (EST) | -£0.45 |
-| Royal Mail postage, blended (EST) | -£2.10 |
-| Card fees ~2% + 25p (EST) | -£0.57 |
-| Meals donation (EST) | -£0.50 |
-| Blended marketing per pouch sold (EST) | -£3.00 |
-| **Contribution** (what each pouch leaves to pay the fixed costs) | **£4.03** (24%) |
+| Price | £15.34 |
+| Filled pouch, delivered to RizqPure (founder: US£6 at ~0.75 £/$) | -£4.50 |
+| Royal Mail postage per pouch, blended over bundles (EST) | -£1.56 |
+| Marketing per pouch sold (EST) | -£3.00 |
+| **Contribution** (what each pouch leaves to pay the fixed costs) | **£6.28** (41%) |
 
 ### The margin that matters
 
 Fixed costs: £600 a month (Shopify plan + apps (subscriptions, reviews, email) (EST) £120, Product liability insurance (EST) £40, Halal certification + lab testing, monthly share (EST) £80, Content, samples, creator gifting (EST) £300, Accounting + bookkeeping (EST) £60).
 
-- **Break-even: 5 pouchs a day.** Below that you lose money every month.
-- **Profit margin at your plan** (20 a day): **18%** of every sale, after every cost.
+- **Break-even: 4 pouchs a day.** Below that you lose money every month.
+- **Profit margin at your plan** (20 a day): **34%** of every sale, after every cost.
 
 ### Year 1, month by month
 
 | month | pouchs a day | revenue | profit | cumulative (after £5,000 startup) |
 | ---: | ---: | ---: | ---: | ---: |
-| 1 | 6 | £2,997 | £125 | -£4,875 |
-| 2 | 8 | £3,996 | £367 | -£4,507 |
-| 3 | 10 | £4,995 | £609 | -£3,898 |
-| 4 | 11 | £5,494 | £730 | -£3,169 |
-| 5 | 12 | £5,994 | £851 | -£2,318 |
-| 6 | 14 | £6,993 | £1,093 | -£1,225 |
-| 7 | 15 | £7,492 | £1,213 | -£12 |
-| 8 | 16 | £7,992 | £1,334 | £1,323 |
-| 9 | 17 | £8,492 | £1,455 | £2,778 |
-| 10 | 18 | £8,991 | £1,576 | £4,354 |
-| 11 | 19 | £9,490 | £1,697 | £6,051 |
-| 12 | 20 | £9,990 | £1,818 | £7,869 |
+| 1 | 6 | £2,761 | £530 | -£4,470 |
+| 2 | 8 | £3,682 | £907 | -£3,562 |
+| 3 | 10 | £4,602 | £1,284 | -£2,278 |
+| 4 | 11 | £5,062 | £1,472 | -£806 |
+| 5 | 12 | £5,522 | £1,661 | £855 |
+| 6 | 14 | £6,443 | £2,038 | £2,892 |
+| 7 | 15 | £6,903 | £2,226 | £5,118 |
+| 8 | 16 | £7,363 | £2,414 | £7,533 |
+| 9 | 17 | £7,823 | £2,603 | £10,136 |
+| 10 | 18 | £8,284 | £2,791 | £12,927 |
+| 11 | 19 | £8,744 | £2,980 | £15,906 |
+| 12 | 20 | £9,204 | £3,168 | £19,074 |
 
-- **Year 1 operating profit: £12,869** on £82,917 of revenue.
-- After the £5,000 startup spend: £7,869.
-- Startup money earned back: month 8.
+- **Year 1 operating profit: £24,074** on £76,393 of revenue.
+- After the £5,000 startup spend: £19,074.
+- Startup money earned back: month 5.
 - Cash you need before it pays for itself: **£5,000**.
 
 ### What if
 
 | scenario | margin at plan | break-even a day | year 1 profit |
 | --- | ---: | ---: | ---: |
-| Base plan | 18% | 5 | £12,869 |
-| Price -10% | 9% | 9 | £4,578 |
-| Volume -20% | 17% | 5 | £8,856 |
-| Unit costs +15% | 7% | 10 | £3,442 |
+| Base plan | 34% | 4 | £24,074 |
+| Price -10% | 27% | 5 | £16,435 |
+| Volume -20% | 33% | 4 | £17,820 |
+| Unit costs +15% | 26% | 5 | £17,307 |
 
 No red flags in these numbers. They are only as good as the inputs: check every cost against a real quote.
 
@@ -594,7 +612,7 @@ When there's nothing new to say: packing day, a certificate audit, the founder a
 
 ### 4. Budget and numbers
 
-**The most you can pay to win a customer.** From the CFO: each pouch leaves £7.03 before marketing (£4.03 contribution + the £3 marketing already in it). If a customer buys about 3 pouches on average (an ASSUMPTION: replace it with your real repeat rate), they are worth about £21 before marketing. To keep about half of it, **cap cost per customer at about £10.50**, and cost per trial at about £10.50 × your trial → pouch conversion (at 30%, about £3.15 per trial).
+**The most you can pay to win a customer.** From the CFO: each pouch leaves £9.28 before marketing (£6.28 contribution + the £3 marketing already in it). An average order is 1.75 pouches (your even mix), so a first order is worth about £16 before marketing. If a customer buys about 3 pouches in total (an ASSUMPTION: replace it with your real repeat rate), they are worth about £28. To keep about half of it, **cap cost per new customer at about £14**, and cost per trial at about £14 × your trial → first-order conversion (at 30%, about £4.20 per trial).
 
 **Monthly split (EST, at about £600/month on marketing):**
 
@@ -610,7 +628,7 @@ When there's nothing new to say: packing day, a certificate audit, the founder a
 | number | change something when |
 | --- | --- |
 | Trial → first pouch conversion | under 20% after 3 weeks: fix the day-5 email and the mixing experience first, not the ads |
-| Cost per first pouch (all marketing ÷ first pouches) | over £10.50 |
+| Cost per new customer (all marketing ÷ first orders) | over £14 |
 | Subscriber month-2 retention | under 60% |
 
 Panel quotes are research, not testimonials. Never use them in ads.
@@ -848,13 +866,13 @@ Critical path: certifier confirmed → copy approved → artwork → reprint ord
 | --- | --- | --- |
 | Pouches a day (incl. subscriptions) | CFO break-even 5, plan ramp month 1: 6 | under 5 for 2 weeks |
 | Trial → first pouch conversion | ≥ 30% | under 20% at day 21 |
-| Cost per first pouch (all marketing) | ≤ £10.50 | over £10.50 |
+| Cost per new customer (all marketing ÷ first orders) | ≤ £14 | over £14 |
 | Subscribers' month-2 retention | ≥ 60% | under 60% |
 | Independent reviews | 50 by day 30 | under 20 |
 
 **Reviews:**
 - **Day 7:** Are trials going out, and do people say it mixes well? Any halal challenge? Which creator codes work?
 - **Day 14:** First trial → pouch numbers (trials from launch week have had about 10 days). Cut the worst channel, double the best.
-- **Day 30:** Real cost per first pouch vs £10.50. Update `numbers.json` with real costs and volumes, re-run `/founder-cfo` and `/founder-plan`. Decide the Ramadan 2027 plan: trial packs for iftar gatherings, a "give with every pouch" Ramadan total, and a family 2-pouch subscription.
+- **Day 30:** Real cost per new customer vs £14. Update `numbers.json` with real costs and volumes, re-run `/founder-cfo` and `/founder-plan`. Decide the Ramadan 2027 plan: trial packs for iftar gatherings, a "give with every pouch" Ramadan total, and a family 2-pouch subscription.
 
 _The panel is simulated buyers and the numbers are projections from your inputs. Confirm demand with real customers and costs with real quotes before you spend. Not financial, legal or tax advice._
