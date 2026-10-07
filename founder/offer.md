@@ -37,6 +37,7 @@ Same 20 buyer cards (seed 314815). Results: `panel-v2/results.md`.
   - An independent lab test for every batch (heavy metals, microbiology; a porcine DNA test is a strong extra for this buyer), published.
 - **Bonus 1: the 7-day trial pack, £4.95, free delivery, credited to the first pouch.** Kills "£18 to find out" and "will it dissolve in my chai?"
 - **Bonus 2: free delivery on every subscription.** Kills the £30 threshold problem the board raised.
+- **Bonus 3: a subscription that respects you.** An email reminder before every charge, skip or cancel in one click, and nothing ticked for you. Subscription traps are the #1 complaint about the halal leaders: 23 one-to-three-star reviews across Sunna, Wellgard and Absolute (`competitors.md`). Reviewers read it as an ethics failure by a faith brand ("Nothing Sunnah about this company").
 - **The guarantee:** 60-day money back, even on an empty pouch. That's longer than the 4-6 week promise, so it covers the time results take. Cost at a 5% claim rate is about £0.81 a pouch (CFO note).
 - **The giving, made specific:** a named charity partner, an amount per pouch, and a live total on the site. Put the real figures in. Don't publish "X meals" until you can show the receipts.
 - **Urgency, only if true:** a Ramadan or launch-week trial price, with a real end date. No fake countdowns.

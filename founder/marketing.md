@@ -1,6 +1,8 @@
 # Marketing: RizqPure
 
-Built from the buyer panels (`panel/results.md`, `panel-v2/results.md`), the board (`board.md`), the offer (`offer.md`) and the CFO's numbers (`cfo.md`). Competitor positioning goes in once `competitors.md` is done; check the positioning line against it.
+Built from the buyer panels (`panel/results.md`, `panel-v2/results.md`), the board (`board.md`), the offer (`offer.md`) and the CFO's numbers (`cfo.md`). Competitor positioning comes from `competitors.md`.
+
+**What the competitor map changes:** only one halal collagen names its certifier on the page (Beauvyn, The Halal Trust, £24.99, launched July 2026, 18 site reviews). Sunna leads on reach (about 12.8k reviews) but its certifier isn't on the page and its biggest complaint is subscription billing. Wellgard sells 20k+ a month on Amazon at £12–15 with "Halal" in the title and no certifier. The empty spot is **halal you can check, plus a subscription that respects you, at £15–18**. RizqPure fits it on price, but not yet on proof.
 
 ## 0. Fix the claims first (before any spend)
 
@@ -30,6 +32,10 @@ Three versions:
 Recommended: **1**. It answers the objection that blocked the most buyers, it's true without stretching claims, and a big brand can't copy it quickly without a credible certificate. Use 2 as the ad angle for the beauty segment and 3 as the Ramadan angle, not as the brand's core.
 
 **One line for everything:** *Halal collagen you can check.*
+
+**Second message (from the competitor reviews):** *A subscription that respects you: a reminder before every charge, cancel in one click.* Lead with the certificate. Use this as the reason to subscribe rather than buy once.
+
+Don't name or knock competitors in ads. Comparative claims must be fair and verifiable under the CAP Code.
 
 ## 2. Channels
 
@@ -87,7 +93,7 @@ When there's nothing new to say: packing day, a certificate audit, the founder a
 
 ## 4. Budget and numbers
 
-**The most you can pay to win a customer.** From the CFO: each pouch leaves £7.38 before marketing (£4.38 contribution + the £3 marketing already in it). If a customer buys about 3 pouches on average (an ASSUMPTION: replace it with your real repeat rate), they're worth about £22 before marketing. To keep about half of it, **cap cost per customer at about £11**, and cost per trial at about £11 × your trial → pouch conversion (at 30%, about £3.30 per trial).
+**The most you can pay to win a customer.** From the CFO: each pouch leaves £7.83 before marketing (£4.83 contribution + the £3 marketing already in it). If a customer buys about 3 pouches on average (an ASSUMPTION: replace it with your real repeat rate), they are worth about £23 before marketing. To keep about half of it, **cap cost per customer at about £11.50**, and cost per trial at about £11.50 × your trial → pouch conversion (at 30%, about £3.45 per trial).
 
 **Monthly split (EST, at about £600/month on marketing):**
 
