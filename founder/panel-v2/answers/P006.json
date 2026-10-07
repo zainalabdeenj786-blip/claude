@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "My knees and shoulders take a beating at the gym and I've been wanting a collagen I can actually trust is halal, so for £4.95 I'll try the trial pack in my chai. I'm not committing to £18 a month until I've checked the certificate myself and seen whether it does anything.",
+  "objection": "The ad says 'a named UK halal certification body' but doesn't tell me which one up front. With bovine collagen the slaughter method is the whole question, so I need to know if it's a certifier I trust, like HMC, before I put it in my body every day.",
+  "would_change_my_mind": "If the certifier turned out to be one I don't trust or the certificate didn't cover the collagen source itself, I'd stop after the trial. If a creator I follow showed real results after a month, I'd go on the subscription.",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 20,
+  "price_too_expensive": 28
+}

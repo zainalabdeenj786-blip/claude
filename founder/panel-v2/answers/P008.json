@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "The halal certificate and lab results tick the boxes, and I'd chuck it in my morning coffee easily enough. But £18 a month for something just for me, when that money could go on the kids or the shopping, is hard to justify on my wage. The £4.95 trial feels like a hook into a monthly spend I'd feel guilty about.",
+  "objection": "I'm not convinced collagen actually does much for my joints after the gym. Spending £15 to £18 every month on myself for something I can't really feel working doesn't sit right with the household budget.",
+  "would_change_my_mind": "Seeing proper evidence it helps joint recovery, or a recommendation from someone at my gym who's noticed a real difference, so it feels like a need rather than a treat.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 14,
+  "price_too_expensive": 20
+}

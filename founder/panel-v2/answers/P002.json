@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "trust",
+  "reason": "If the certificate number checks out with the certifying body and it's one I recognise, I'd take the £4.95 trial pack, because I can buy it once without signing up for a subscription and see if my knees feel any better after training. I'm not committing to a full pouch until I've checked the certificate myself and tried it.",
+  "objection": "Bovine collagen is exactly where the halal claims get vague. I need to know the certifier is a proper one and that the slaughter and the source are actually covered, not just a logo on the pouch. And I'm not getting pushed into a monthly subscription.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 22,
+  "price_too_expensive": 30
+}

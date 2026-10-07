@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "I've already got a tub going that I bought on Amazon, and I can get a bigger one for about the same money with next-day delivery. The halal certificate does make me feel a bit guilty that I never checked mine, but not enough to switch this week.",
+  "objection": "£18 for 30 days feels steep when Amazon has bigger tubs for less, and I don't really know this brand.",
+  "would_change_my_mind": "Finding out for sure my current collagen isn't halal, or seeing it on Amazon at around £13-14 for the pouch so I can add it to my usual order.",
+  "price_too_cheap": 6,
+  "price_cheap": 11,
+  "price_expensive": 17,
+  "price_too_expensive": 24
+}

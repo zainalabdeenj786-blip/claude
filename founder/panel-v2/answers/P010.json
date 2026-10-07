@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "price",
+  "reason": "A £4.95 trial with free delivery that comes off the first pouch is cheap enough that I'd try it, and a halal certificate I can actually check beats the vague claims on most Amazon tubs. I'd only get the trial this month though, not commit to a full pouch yet.",
+  "objection": "£18 for 300g is steep when I can get a 500g tub of collagen on Amazon for about the same on a Prime Day deal, and the pitch is all skin, hair and biotin when I mainly want it for my joints and recovery.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 7,
+  "price_cheap": 12,
+  "price_expensive": 18,
+  "price_too_expensive": 24
+}

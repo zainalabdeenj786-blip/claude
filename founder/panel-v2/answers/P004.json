@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "trust",
+  "reason": "I've never heard of RizqPure, but a certificate number I can look up myself and batch lab results is more than most brands give me, so I'd risk £4.95 on the trial pack after checking the certifier. I wouldn't commit to a full pouch or a subscription until I've used it for a week.",
+  "objection": "It says 'a named UK halal certification body' but I need to know which one. Bovine collagen means the slaughter method matters, and if it's a certifier I don't trust on that, it's a no for me whatever the logo looks like.",
+  "would_change_my_mind": "If the certifier turned out to be one I don't accept for bovine sourcing, or the certificate didn't cover this exact product, I'd drop it straight away.",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 22,
+  "price_too_expensive": 30
+}
