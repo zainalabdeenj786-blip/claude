@@ -61,11 +61,11 @@ Critical path: certifier confirmed → copy approved → artwork → reprint ord
 | --- | --- | --- |
 | Pouches a day (incl. subscriptions) | CFO break-even 5, plan ramp month 1: 6 | under 5 for 2 weeks |
 | Trial → first pouch conversion | ≥ 30% | under 20% at day 21 |
-| Cost per first pouch (all marketing) | ≤ £11 | over £11 |
+| Cost per first pouch (all marketing) | ≤ £10.50 | over £10.50 |
 | Subscribers' month-2 retention | ≥ 60% | under 60% |
 | Independent reviews | 50 by day 30 | under 20 |
 
 **Reviews:**
 - **Day 7:** Are trials going out, and do people say it mixes well? Any halal challenge? Which creator codes work?
 - **Day 14:** First trial → pouch numbers (trials from launch week have had about 10 days). Cut the worst channel, double the best.
-- **Day 30:** Real cost per first pouch vs £11. Update `numbers.json` with real costs and volumes, re-run `/founder-cfo` and `/founder-plan`. Decide the Ramadan 2027 plan: trial packs for iftar gatherings, a "give with every pouch" Ramadan total, and a family 2-pouch subscription.
+- **Day 30:** Real cost per first pouch vs £10.50. Update `numbers.json` with real costs and volumes, re-run `/founder-cfo` and `/founder-plan`. Decide the Ramadan 2027 plan: trial packs for iftar gatherings, a "give with every pouch" Ramadan total, and a family 2-pouch subscription.

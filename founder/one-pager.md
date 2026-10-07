@@ -11,18 +11,18 @@
 - The certifier and certificate number on the pouch, and lab results published for every batch.
 - Every pouch funds meals through a named partner.
 
-**The numbers** (from the CFO tool, using **estimated** costs):
+**The numbers** (from the CFO tool: pouch cost £6.00 from the founder, other costs **estimated**):
 
 | | |
 | --- | ---: |
 | Price (blended one-off and subscription) | £16.65 a pouch |
-| Contribution per pouch | £4.83 (29%) |
-| Profit margin at plan (20 a day) | 23% |
+| Contribution per pouch | £4.03 (24%) |
+| Profit margin at plan (20 a day) | 18% |
 | Break-even | 5 pouches a day |
-| Year 1 operating profit | £16,853 |
+| Year 1 operating profit | £12,869 |
 | One-off spend | £5,000 |
 | Cash needed before it pays for itself | £5,000 |
-| Startup money earned back | month 6 |
+| Startup money earned back | month 8 |
 | Buyer panel, today's offer | 1 buy · 19 pass |
 
 **Verdict: Not yet.** The money works on estimates, but buyers won't buy today's offer.
@@ -41,4 +41,4 @@
 
 **The ask.** Before any outside money: confirm the certifier (which body, and whether the certificate covers the bovine source, the slaughter and the plant), publish it, and run the pre-order test. If the test passes, the £5,000 above funds a relaunch on **23 November 2026**, followed by a push into Ramadan 2027.
 
-_The panel is simulated buyers, and the numbers are projections from estimated costs. This is not financial, legal or tax advice._
+_The panel is simulated buyers, and the numbers are projections from your pouch cost and estimated other costs. This is not financial, legal or tax advice._

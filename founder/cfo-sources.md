@@ -4,7 +4,7 @@
 | --- | ---: | --- |
 | Price £18 one-off, Subscribe & Save 20% off | £18 / £14.40 | rizqpure.com, read 2026-10-07 (fact) |
 | Blended price | £16.65 | ESTIMATE: 50% one-off at £18 / 50% subscription at £15.30 (15% off, pricing.md). Replace with your Shopify sales mix. |
-| 300g pouch filled (10g collagen x 30 + vit C + biotin) | £5.20 | ESTIMATE: typical small-batch contract-packed bovine collagen. Replace with your supplier invoice. |
+| 300g pouch filled (10g collagen x 30 + vit C + biotin), delivered | £6.00 | **FOUNDER** (2026-10-07): "Cost per pack is £6", delivered to the door. |
 | Mailer, scoop, insert | £0.45 | ESTIMATE |
 | Postage, blended | £2.10 | ESTIMATE: Royal Mail large-letter/small-parcel rates, some orders over £30 ship free. Replace with your real postage per pouch. |
 | Card fees | £0.57 | ESTIMATE: about 2% + 25p per order. Check your Shopify Payments plan. |

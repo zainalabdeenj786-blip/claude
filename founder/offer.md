@@ -54,7 +54,7 @@ Same 20 buyer cards (seed 314815). Results: `panel-v2/results.md`.
 
 ## Costs to check with the CFO
 
-- Trial pack: 7 x 10g sachets + letterbox mailer + postage ≈ £1.30 collagen + £0.60 packing + £1.20 postage = **about £3.10 (ESTIMATE)** against £4.95. It roughly breaks even before marketing. It only pays if enough trial buyers convert to a pouch: **measure trial → pouch conversion from day one.**
+- Trial pack: 7 x 10g sachets + letterbox mailer + postage ≈ £1.40 collagen (from your £6 pouch) + £0.60 packing + £1.20 postage = **about £3.20 (ESTIMATE)** against £4.95. It roughly breaks even before marketing. It only pays if enough trial buyers convert to a pouch: **measure trial → pouch conversion from day one.**
 - Free subscription delivery: already in the CFO's blended £2.10 postage estimate.
 - Subscription discount cut from 20% to 15% (£15.30): pays for the free delivery.
 
