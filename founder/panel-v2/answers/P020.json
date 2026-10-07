@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "trust",
+  "reason": "Most collagen is bovine or fish gelatine I can't trust, so a certificate number I can check myself plus batch lab results is rare. For £4.95 I'll try the 7-day pack in my chai, but only once I've looked up the certifier and confirmed they're one I accept.",
+  "objection": "Which certifier it is matters. Some bodies accept things I don't, and with bovine collagen I need to know the cattle were slaughtered halal. Also I doubt I'll keep stirring an unflavoured powder into my tea every day once the novelty wears off.",
+  "would_change_my_mind": "If the certifier turned out to be one I don't trust, or the certificate didn't cover the collagen source itself, I'd walk away.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 20,
+  "price_too_expensive": 28
+}

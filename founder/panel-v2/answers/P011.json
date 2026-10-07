@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I read the label properly: the only health claims are for the vitamin C and biotin, not for the collagen, which tells me the collagen itself hasn't been shown to do much. Lab results prove it's clean and halal, not that it works, and I'm not paying monthly on hope.",
+  "objection": "There's no evidence that 10g of collagen a day will actually change my skin, hair or joints, and I could get vitamin C and biotin far cheaper on their own. Stirring an unflavoured powder into my tea every day also sounds like a chore I'd drop within a fortnight.",
+  "would_change_my_mind": "Published results from a proper independent trial on this product or this dose showing a measurable improvement in skin or joints, not just purity testing.",
+  "price_too_cheap": 6,
+  "price_cheap": 10,
+  "price_expensive": 15,
+  "price_too_expensive": 20
+}
