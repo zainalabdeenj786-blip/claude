@@ -23,7 +23,7 @@ screen colours in the print file: matte indigo film (`#2C2F66` instead of the fi
 metallic-silver wordmark, silver→gold ribbon, soft matte lighting and fine film grain.
 
 They also use the real **stand-up pouch shape** measured from product photos: flat full-width top seal
-with tear notches and zip, sides tapering toward the base, rounded bottom corners and a base that curls
+with tear notches and zip, sides tapering toward the base, a flat base with tight rounded corners that curls
 under. Because vector artwork can't be bent onto a curved shape, the shaped pouch is a high-res image
 (2400 px, `_source/warp.py`); the pouch/marketing SVGs embed it, so they stay editable layouts while the
 logos, text lockups and flat artwork remain pure vectors.

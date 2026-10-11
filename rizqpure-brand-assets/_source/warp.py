@@ -15,7 +15,7 @@ Hs, Ws = src.shape[:2]
 TAPER = 0.14        # total width lost at the base
 FLAT_TOP = 0.11     # seal + zip band stays flat and full width
 CURL = 0.955        # visible height after the base curls under
-RH, RV = 0.27, 0.10   # bottom corner radius: fraction of half-width, fraction of height
+RH, RV = 0.13, 0.045  # bottom corner radius: fraction of half-width, fraction of height
 BULGE = 0.78        # cylindrical bulge strength of the filled body
 
 Wo = Ws
@@ -34,7 +34,7 @@ ax = np.abs(xn)
 # bottom boundary (rounded corners + slightly convex base)
 c0 = 1 - RH
 k = np.clip((ax - c0) / RH, 0, 1)
-ylim = 1 - 0.012 * xn ** 2 - RV * (1 - np.sqrt(np.clip(1 - k ** 2, 0, 1)))
+ylim = 1 - 0.004 * xn ** 2 - RV * (1 - np.sqrt(np.clip(1 - k ** 2, 0, 1)))
 
 # soft alpha (analytic edges, ~1px antialias)
 a_side = np.clip(half - np.abs(dx) + 0.5, 0, 1)
@@ -54,7 +54,7 @@ xc = np.clip(xn, -1, 1)
 bs = np.maximum(b, 1e-3)
 s = np.arcsin(bs * xc) / np.arcsin(bs)
 us = (0.5 + 0.5 * s * 0.992) * Ws
-v0 = 0.80
+v0 = 0.88
 vv = np.where(v < v0, v, v0 + (v - v0) / np.maximum(ylim - v0, 1e-3) * (1 - v0))
 vs = np.clip(vv, 0, 1) * (Hs - 1)
 

@@ -257,7 +257,7 @@ def overlays(details=False):
 
 def shadow_svg(cx, by, w, scale=1.0):
     return (f'<ellipse cx="{cx}" cy="{by+3}" rx="{w*0.50}" ry="{11*scale}" fill="#000" fill-opacity=".38" filter="url(#soft-shadow)"/>'
-            f'<ellipse cx="{cx}" cy="{by}" rx="{w*0.34}" ry="{2.6*scale}" fill="#000" fill-opacity=".55" filter="url(#contact-shadow)"/>')
+            f'<ellipse cx="{cx}" cy="{by}" rx="{w*0.40}" ry="{2.6*scale}" fill="#000" fill-opacity=".55" filter="url(#contact-shadow)"/>')
 
 PRINT = os.environ.get('PRINT', '1') == '1'
 PRINT_NAVY = (44, 47, 102)         # #2C2F66 – sampled from photos of the printed matte pouch
