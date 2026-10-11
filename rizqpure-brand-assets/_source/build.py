@@ -197,6 +197,27 @@ def pouch_defs(d):
 <pattern id="seal-ribs" width="6" height="2.2" patternUnits="userSpaceOnUse">
   <rect width="6" height="1" fill="#fff" fill-opacity=".045"/>
 </pattern>
+<linearGradient id="silver-foil" gradientUnits="userSpaceOnUse" x1="60" y1="185" x2="370" y2="280">
+  <stop offset="0" stop-color="#C9CBD3"/><stop offset=".22" stop-color="#F7F7FA"/>
+  <stop offset=".45" stop-color="#A9ACB8"/><stop offset=".62" stop-color="#ECEDF2"/>
+  <stop offset=".85" stop-color="#B7B9C4"/><stop offset="1" stop-color="#E6E7EC"/>
+</linearGradient>
+<radialGradient id="pillow" cx=".42" cy=".42" r=".72">
+  <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+  <stop offset=".85" stop-color="#000" stop-opacity=".16"/>
+  <stop offset="1" stop-color="#000" stop-opacity=".38"/>
+</radialGradient>
+<linearGradient id="key-light" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#fff" stop-opacity=".13"/>
+  <stop offset=".45" stop-color="#fff" stop-opacity="0"/>
+  <stop offset=".7" stop-color="#000" stop-opacity="0"/>
+  <stop offset="1" stop-color="#000" stop-opacity=".22"/>
+</linearGradient>
+<filter id="matte-grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 .9 -.35"/>
+  <feComposite operator="in" in2="SourceGraphic"/>
+</filter>
 <filter id="soft-shadow" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="9"/></filter>
 <filter id="contact-shadow" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="2.5"/></filter>
 ''')
@@ -216,7 +237,8 @@ def overlays():
 <rect x="{W-SIDE-0.9}" y="{SEAL}" width="0.9" height="{H-SEAL}" fill="#000" fill-opacity=".14"/>
 <path d="M{SIDE},{gus-6} C{W*0.3},{gus+12} {W*0.7},{gus+12} {W-SIDE},{gus-6}" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="1.6"/>
 <path d="M{SIDE},{gus-4} C{W*0.3},{gus+14} {W*0.7},{gus+14} {W-SIDE},{gus-4}" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="1.4"/>
-<rect width="{W}" height="{H}" fill="url(#sheen)"/>
+<rect width="{W}" height="{H}" fill="url(#sheen)" opacity="{.45 if PRINT else 1}"/>
+{'<rect width="%g" height="%g" fill="url(#key-light)"/><rect width="%g" height="%g" fill="url(#pillow)"/><rect width="%g" height="%g" fill="#fff" filter="url(#matte-grain)" opacity=".10"/>' % (W, H, W, H, W, H) if PRINT else ''}
 <rect width="{W}" height="{H}" fill="url(#sh-x)"/>
 <rect width="{W}" height="{H}" fill="url(#sh-y)"/>
 <use xlink:href="#pouch-shape" fill="none" stroke="#000" stroke-opacity=".55" stroke-width="1.2"/>
@@ -226,11 +248,27 @@ def shadow_svg(cx, by, w, scale=1.0):
     return (f'<ellipse cx="{cx}" cy="{by+3}" rx="{w*0.56}" ry="{11*scale}" fill="#000" fill-opacity=".38" filter="url(#soft-shadow)"/>'
             f'<ellipse cx="{cx}" cy="{by}" rx="{w*0.47}" ry="{2.6*scale}" fill="#000" fill-opacity=".55" filter="url(#contact-shadow)"/>')
 
+PRINT = os.environ.get('PRINT', '1') == '1'
+PRINT_NAVY = (44, 47, 102)         # #2C2F66 – sampled from photos of the printed matte pouch
+SILVER_KEY = '#E4DDDC'
+def print_recolor(c):
+    if abs(c[0] - 1) < 3 and abs(c[1] - 27) < 3 and abs(c[2] - 72) < 3: return fmt(PRINT_NAVY)
+    if is_word(c): return SILVER_KEY
+    if min(c) > 245: return '#F1F1F5'
+    if c[0] > c[2] + 40 and c[0] > 120:   # gold inks print a touch lighter/warmer on matte film
+        return fmt(tuple(min(255, v * 1.08 + 6) for v in c))
+    return fmt(c)
+
 def pouch_symbol(d, side, gid):
     box, els = (FRONT, front_els) if side == 'front' else (BACK, back_els)
     g = etree.SubElement(d.defs, '{%s}g' % NS); g.set('id', gid)
     inner = etree.SubElement(g, '{%s}g' % NS); inner.set('mask', 'url(#pouch-mask)')
-    d.group(els, transform='translate(%g %g)' % (-box[0], -box[1]), into=inner)
+    if PRINT:
+        g2 = d.group(els, transform='translate(%g %g)' % (-box[0], -box[1]), into=inner, recolor=print_recolor)
+        for x in g2.iter():
+            if isinstance(x.tag, str) and x.get('fill') == SILVER_KEY: x.set('fill', 'url(#silver-foil)')
+    else:
+        d.group(els, transform='translate(%g %g)' % (-box[0], -box[1]), into=inner)
     d.frag(overlays(), inner)
 
 def single(name, side, shadow=True, title=''):
@@ -292,8 +330,8 @@ def marketing(name, size, bgkind, title, place_pouches, place_text):
     pouch_defs(d)
     pouch_symbol(d, 'front', 'pouch-front')
     if bgkind == 'navy':
-        d.adddefs('<radialGradient id="bg" cx=".68" cy=".45" r=".85"><stop offset="0" stop-color="#0B2C6B"/>'
-                  '<stop offset=".55" stop-color="#03173F"/><stop offset="1" stop-color="#010B22"/></radialGradient>'
+        d.adddefs('<radialGradient id="bg" cx=".68" cy=".45" r=".85"><stop offset="0" stop-color="#3A3E86"/>'
+                  '<stop offset=".55" stop-color="#24285E"/><stop offset="1" stop-color="#121433"/></radialGradient>'
                   '<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#E9C27A" stop-opacity=".28"/>'
                   '<stop offset="1" stop-color="#E9C27A" stop-opacity="0"/></radialGradient>')
         d.add(f'<rect width="{Wc}" height="{Hc}" fill="url(#bg)"/>')
@@ -381,3 +419,21 @@ marketing('banner-light-1920x700.svg', (1920, 700), 'cream', 'RizqPure – light
                              put_pouch(d, 1060, 640, 0.82), put_pouch(d, 1350, 640, 0.82)),
           lambda d, Wc, Hc: text_stack(d, 170, 110, 560, light=True))
 print('done')
+
+# ---------------------------------------------------------------- as-printed metallic logo
+def metallic_logo(name, title, bg=None, pad=18):
+    x0, y0, x1, y1 = LOGO_BOX
+    vb = (x0 - pad, y0 - pad, x1 - x0 + 2 * pad, y1 - y0 + 2 * pad)
+    d = Doc(vb, width=1200, title=title)
+    d.adddefs('<linearGradient id="silver-foil" gradientUnits="userSpaceOnUse" x1="210" y1="420" x2="510" y2="505">'
+              '<stop offset="0" stop-color="#C9CBD3"/><stop offset=".22" stop-color="#F7F7FA"/><stop offset=".45" stop-color="#A9ACB8"/>'
+              '<stop offset=".62" stop-color="#ECEDF2"/><stop offset=".85" stop-color="#B7B9C4"/><stop offset="1" stop-color="#E6E7EC"/></linearGradient>')
+    if bg:
+        d.add('<rect x="%g" y="%g" width="%g" height="%g" fill="%s"/>' % (vb + (bg,)))
+    g = d.group(logo_els, recolor=print_recolor)
+    for x in g.iter():
+        if isinstance(x.tag, str) and x.get('fill') == SILVER_KEY: x.set('fill', 'url(#silver-foil)')
+    d.save(name)
+
+metallic_logo('logo-metallic-as-printed-transparent.svg', 'RizqPure logo – metallic silver/gold as printed')
+metallic_logo('logo-metallic-as-printed-on-navy.svg', 'RizqPure logo – metallic on printed navy', bg=fmt(PRINT_NAVY), pad=40)
