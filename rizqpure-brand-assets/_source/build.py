@@ -222,8 +222,19 @@ def pouch_defs(d):
 <filter id="contact-shadow" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="2.5"/></filter>
 ''')
 
-def overlays():
+def overlays(details=False):
     gus = H - 22
+    if details:
+        return f'''
+<rect width="{W}" height="{SEAL}" fill="url(#seal-ribs)"/>
+<rect y="{SEAL-0.6}" width="{W}" height="1.2" fill="#000" fill-opacity=".30"/>
+<rect y="{SEAL+0.6}" width="{W}" height="0.8" fill="#fff" fill-opacity=".10"/>
+<rect y="{ZIP-3}" width="{W}" height="1.4" fill="#000" fill-opacity=".35"/>
+<rect y="{ZIP-1.6}" width="{W}" height="1.6" fill="#fff" fill-opacity=".13"/>
+<rect y="{ZIP}" width="{W}" height="1.6" fill="#000" fill-opacity=".40"/>
+<rect y="{ZIP+1.6}" width="{W}" height="1.2" fill="#fff" fill-opacity=".08"/>
+<rect y="{ZIP+2.8}" width="{W}" height="14" fill="url(#zip-shadow)" opacity=".6"/>
+'''
     return f'''
 <rect width="{W}" height="{SEAL}" fill="url(#seal-ribs)"/>
 <rect y="{SEAL-0.6}" width="{W}" height="1.2" fill="#000" fill-opacity=".30"/>
@@ -245,8 +256,8 @@ def overlays():
 '''
 
 def shadow_svg(cx, by, w, scale=1.0):
-    return (f'<ellipse cx="{cx}" cy="{by+3}" rx="{w*0.56}" ry="{11*scale}" fill="#000" fill-opacity=".38" filter="url(#soft-shadow)"/>'
-            f'<ellipse cx="{cx}" cy="{by}" rx="{w*0.47}" ry="{2.6*scale}" fill="#000" fill-opacity=".55" filter="url(#contact-shadow)"/>')
+    return (f'<ellipse cx="{cx}" cy="{by+3}" rx="{w*0.50}" ry="{11*scale}" fill="#000" fill-opacity=".38" filter="url(#soft-shadow)"/>'
+            f'<ellipse cx="{cx}" cy="{by}" rx="{w*0.34}" ry="{2.6*scale}" fill="#000" fill-opacity=".55" filter="url(#contact-shadow)"/>')
 
 PRINT = os.environ.get('PRINT', '1') == '1'
 PRINT_NAVY = (44, 47, 102)         # #2C2F66 – sampled from photos of the printed matte pouch
@@ -259,9 +270,24 @@ def print_recolor(c):
         return fmt(tuple(min(255, v * 1.08 + 6) for v in c))
     return fmt(c)
 
-def pouch_symbol(d, side, gid):
+import base64, json
+POUCH_IMG = json.loads(os.environ['POUCH_IMG']) if os.environ.get('POUCH_IMG') else None
+def img_dims(side):
+    from PIL import Image as _I
+    im = _I.open(POUCH_IMG[side]); return im.size
+TOPOFF = 0.0
+if POUCH_IMG:
+    _w, _h = img_dims('front'); TOPOFF = H - W * _h / _w
+
+def pouch_symbol(d, side, gid, details=False):
     box, els = (FRONT, front_els) if side == 'front' else (BACK, back_els)
     g = etree.SubElement(d.defs, '{%s}g' % NS); g.set('id', gid)
+    if POUCH_IMG and not details:
+        w_, h_ = img_dims(side); hi = W * h_ / w_
+        data = base64.b64encode(open(POUCH_IMG[side], 'rb').read()).decode()
+        d.frag(f'<image x="0" y="{H-hi:.2f}" width="{W:.2f}" height="{hi:.2f}" preserveAspectRatio="none" '
+               f'xlink:href="data:image/png;base64,{data}"/>', g)
+        return
     inner = etree.SubElement(g, '{%s}g' % NS); inner.set('mask', 'url(#pouch-mask)')
     if PRINT:
         g2 = d.group(els, transform='translate(%g %g)' % (-box[0], -box[1]), into=inner, recolor=print_recolor)
@@ -269,11 +295,29 @@ def pouch_symbol(d, side, gid):
             if isinstance(x.tag, str) and x.get('fill') == SILVER_KEY: x.set('fill', 'url(#silver-foil)')
     else:
         d.group(els, transform='translate(%g %g)' % (-box[0], -box[1]), into=inner)
-    d.frag(overlays(), inner)
+    d.frag(overlays(details), inner)
+
+def dim_svg(d, ref, transform, dim):
+    fid = 'dim%d' % round(dim * 100)
+    if fid not in d.have:
+        d.have.add(fid)
+        d.adddefs(f'<filter id="{fid}"><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 {dim} 0"/></filter>')
+    d.add(f'<use xlink:href="#{ref}" transform="{transform}" filter="url(#{fid})"/>')
+
+def details_flat(name, side):
+    d = Doc((0, 0, W, H), width=2400, title='details')
+    pouch_defs(d)
+    pouch_symbol(d, side, 'pouch', details=True)
+    d.add('<use xlink:href="#pouch"/>')
+    d.save(name)
+
+if not POUCH_IMG:
+    details_flat('_details-front.svg', 'front')
+    details_flat('_details-back.svg', 'back')
 
 def single(name, side, shadow=True, title=''):
     pad = 28
-    d = Doc((-pad, -pad, W + 2 * pad, H + 2 * pad + (24 if shadow else 0)), width=1400, title=title)
+    d = Doc((-pad, TOPOFF - pad, W + 2 * pad, H - TOPOFF + 2 * pad + (24 if shadow else 0)), width=1400, title=title)
     pouch_defs(d)
     pouch_symbol(d, side, 'pouch')
     if shadow: d.add(shadow_svg(W / 2, H, W))
@@ -287,7 +331,7 @@ single('pouch-back-3d.svg', 'back', True, 'RizqPure pouch – back (with shadow)
 def multi(name, layout, title, extra_w=0):
     """layout: list of (side, x, y_bottom, scale, dim) back-to-front."""
     xs = [x for _, x, _, s, _ in layout] + [x + W * s for _, x, _, s, _ in layout]
-    ys = [yb - H * s for _, _, yb, s, _ in layout] + [yb for _, _, yb, _, _ in layout]
+    ys = [yb - (H - TOPOFF) * s for _, _, yb, s, _ in layout] + [yb for _, _, yb, _, _ in layout]
     pad = 30
     vb = (min(xs) - pad, min(ys) - pad, max(xs) - min(xs) + 2 * pad, max(ys) - min(ys) + 2 * pad + 22)
     d = Doc(vb, width=2000, title=title)
@@ -298,9 +342,7 @@ def multi(name, layout, title, extra_w=0):
         d.add(shadow_svg(x + W * s / 2, yb, W * s, s))
         d.add(f'<use xlink:href="#pouch-{side}" transform="translate({x} {yb - H*s}) scale({s})"/>')
         if dim:
-            d.add(f'<path d="M{x+R*s},{yb-H*s} H{x+(W-R)*s} Q{x+W*s},{yb-H*s} {x+W*s},{yb-(H-R)*s} V{yb-R*s} '
-                  f'Q{x+W*s},{yb} {x+(W-R)*s},{yb} H{x+R*s} Q{x},{yb} {x},{yb-R*s} V{yb-(H-R)*s} Q{x},{yb-H*s} {x+R*s},{yb-H*s} Z" '
-                  f'fill="#000" fill-opacity="{dim}"/>')
+            dim_svg(d, 'pouch-' + side, f'translate({x} {yb - H*s}) scale({s})', dim)
     d.save(name)
 
 multi('pouch-duo-front.svg', [('front', 0, H, 1, 0), ('front', W + 40, H, 1, 0)], 'RizqPure – two pouches')
@@ -351,7 +393,7 @@ def put_pouch(d, x, yb, s, dim=0):
     d.add(shadow_svg(x + W * s / 2, yb, W * s, s))
     d.add(f'<use xlink:href="#pouch-front" transform="translate({x:.1f} {yb - H*s:.1f}) scale({s:.4f})"/>')
     if dim:
-        d.add(f'<rect x="{x}" y="{yb-H*s}" width="{W*s}" height="{H*s}" rx="{R*s}" fill="#000" fill-opacity="{dim}"/>')
+        dim_svg(d, 'pouch-front', f'translate({x:.1f} {yb - H*s:.1f}) scale({s:.4f})', dim)
 
 def put_els(d, els, box, x, y, w, recolor=None):
     s = w / (box[2] - box[0])
@@ -399,7 +441,7 @@ marketing('social-square-1080x1080-navy.svg', (1080, 1080), 'navy', 'RizqPure �
           lambda d, Wc, Hc: None)
 marketing('social-square-1080x1080-cream.svg', (1080, 1080), 'cream', 'RizqPure – square post (cream)',
           lambda d, Wc, Hc: (d.add(f'<ellipse cx="540" cy="600" rx="520" ry="440" fill="url(#glow)"/>'),
-                             put_pouch(d, 300, 1000, 1.06)),
+                             put_pouch(d, 540 - W * 1.26 / 2, 1010, 1.26)),
           lambda d, Wc, Hc: None)
 marketing('social-story-1080x1920.svg', (1080, 1920), 'navy', 'RizqPure – story / reel cover',
           lambda d, Wc, Hc: (d.add(f'<ellipse cx="540" cy="1320" rx="560" ry="560" fill="url(#glow)"/>'),
@@ -412,7 +454,7 @@ marketing('og-share-1200x630.svg', (1200, 630), 'navy', 'RizqPure – link previ
                              put_pouch(d, 790, 610, 0.84)),
           lambda d, Wc, Hc: text_stack(d, 80, 120, 470))
 marketing('ecommerce-main-2000x2000-white.svg', (2000, 2000), 'white', 'RizqPure – store main image (white)',
-          lambda d, Wc, Hc: put_pouch(d, (2000 - W * 2.55) / 2, 1820, 2.55),
+          lambda d, Wc, Hc: put_pouch(d, (2000 - W * 2.8) / 2, 1870, 2.8),
           lambda d, Wc, Hc: None)
 marketing('banner-light-1920x700.svg', (1920, 700), 'cream', 'RizqPure – light banner',
           lambda d, Wc, Hc: (d.add(f'<ellipse cx="1350" cy="360" rx="560" ry="330" fill="url(#glow)"/>'),

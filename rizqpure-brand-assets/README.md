@@ -20,7 +20,13 @@ pouch artwork are **real vectors** (infinitely scalable), not traced images.
 
 The 3D pouches and marketing layouts are colour-matched to photos of the **printed** pouch, not the
 screen colours in the print file: matte indigo film (`#2C2F66` instead of the file's `#011B48`),
-metallic-silver wordmark, silver→gold ribbon, soft matte lighting with a pillowed shape and fine film grain.
+metallic-silver wordmark, silver→gold ribbon, soft matte lighting and fine film grain.
+
+They also use the real **stand-up pouch shape** measured from product photos: flat full-width top seal
+with tear notches and zip, sides tapering toward the base, rounded bottom corners and a base that curls
+under. Because vector artwork can't be bent onto a curved shape, the shaped pouch is a high-res image
+(2400 px, `_source/warp.py`); the pouch/marketing SVGs embed it, so they stay editable layouts while the
+logos, text lockups and flat artwork remain pure vectors.
 The flat artwork files and standard logos keep the original file colours.
 
 ## Variations
@@ -57,7 +63,7 @@ so they're limited by the original photo resolution — use under ~800 px wide)
 
 - The **barcode on the back artwork is the placeholder `1 234567 789012`** from the print file.
   Replace it with your real GTIN before using the back image on a store listing.
-- The 3D pouches are drawn artwork with vector shading, not photos — good for websites and ads.
+- The 3D pouches are rendered from the real artwork, not photographed — good for websites and ads.
   For hero photography, the real-pouch photos still work best alongside these.
-- To regenerate: in `_source/`, run `pdftocairo -svg original-print-artwork.pdf art.svg`, `python3 make_clean.py`, then `python3 build.py out` builds the SVGs; `batch.js` / `pdf.js` / `angle.js`
+- To regenerate: in `_source/`, run `pdftocairo -svg original-print-artwork.pdf art.svg`, `python3 make_clean.py`, `python3 build.py out` (also writes flat `_details-*.svg`), render those and shape them with `warp.py`, then re-run `build.py` with `POUCH_IMG='{"front":"front.png","back":"back.png"}'`; `batch.js` / `pdf.js` / `angle.js`
   render PNG/PDF via Playwright Chromium.
