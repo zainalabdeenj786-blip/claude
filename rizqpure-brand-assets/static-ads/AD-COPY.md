@@ -63,3 +63,18 @@ the instinct to answer a call, and the "Accept" makes the ad feel like a choice.
 | `ad-calling-collagen-you-can-trust-*` | Collagen you can trust is calling... | No more guessing what's in your collagen. 100% hydrolysed halal bovine peptides, and 10% of profits go to charity. | Collagen You Can Trust |
 
 Source: `_source/calling.js` (headlines in the `ADS` array), pouch cut-out `_source/pouch.png`.
+
+---
+
+# Proven-format remixes (`proven-formats/`)
+
+| File | Based on | Psychological lever | Primary text (suggested) | Headline |
+|---|---|---|---|---|
+| `ad-dont-be-a-mug-1080x1350` | Hismile "Don't Be An IDIOT." | **Pattern interrupt + loss aversion.** A giant cheeky word stops the scroll, and paying full price becomes the "foolish" choice. "Mug" is British slang for a fool *and* where your collagen goes. | Don't be a mug. Put RizqPure in one instead 😉 Buy 3 pouches for £51 and save £9. That's about 11 weeks of your daily halal collagen ritual. | Buy 3, Save £9 |
+| `ad-face-the-facts-1080x1080` | Dr. Squatch "Face the Facts" | **Specific numbers + confident brevity.** "Enough said..." signals there's nothing to argue with. Every number is a verifiable product fact, not an invented survey. | 100% halal. 0 g sugar. 10% of profits to Islamic Relief. 80p a day. Enough said. | Halal Collagen, Facts Only |
+| `ad-collagen-tier-list-1080x1080` | Hershey's tier list | **Native meme + debate bait.** It looks like content, not an ad, and people comment to disagree, which boosts reach. Ranks generic categories only (no named competitors). | We ranked collagen so you don't have to. Where does yours sit? 👇 | The Halal Collagen Tier List |
+| `ad-1-scoop-does-both-1080x1350` | Dog is Human Venn | **Two pains, one simple fix.** The Venn diagram makes "one product, two benefits" obvious at a glance. Uses "supports" + the authorised Vitamin C claim. | Glowing skin and comfortable joints for every sujood. One unflavoured scoop in your chai or coffee. | One Scoop. Skin + Joints. |
+| `ad-zero-stars-1080x1350` | Bible App "Zero stars – Satan" | **Inverted testimonial.** A "bad review" from your coffee is funny *and* proves the product is tasteless. | Our harshest critic? Your morning coffee. It couldn't even taste us. Unflavoured halal collagen that disappears into any drink. | Your Coffee Hates Us |
+
+Before running: confirm the Vitamin C amount is ≥ 12 mg per 10 g scoop (needed for the claim line), confirm "10% of profits"
+vs "10% of every purchase" (site and pack differ), and confirm the £20 / £51 prices.
