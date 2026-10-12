@@ -78,3 +78,17 @@ Source: `_source/calling.js` (headlines in the `ADS` array), pouch cut-out `_sou
 
 Before running: confirm the Vitamin C amount is ≥ 12 mg per 10 g scoop (needed for the claim line), confirm "10% of profits"
 vs "10% of every purchase" (site and pack differ), and confirm the £20 / £51 prices.
+
+## Round 2
+
+| File | Based on | Psychological lever | Primary text (suggested) | Headline |
+|---|---|---|---|---|
+| `ad-what-your-body-needs-daily-1080x1350` | Sunbase 4-circle Venn | **Editorial "system" framing.** The product sits where every daily need overlaps; the calm, minimal look signals a premium brand. | Halal you can trust, skin that glows, joints for prayer, and one scoop instead of ten pills. Nourishment, made simple. | Your Daily Halal Collagen |
+| `ad-5-signs-wrong-collagen-1080x1350` | Goodnight Tape "5 signs" | **Self-diagnosis checklist.** Viewers mentally tick each sign against their current brand, which creates doubt and the urge to switch. | How many of these does your collagen tick? If it's even one, it's time to switch to certified halal collagen that disappears into any drink. | Switch to Halal Collagen |
+| `ad-search-bar-1080x1080` | Altiva search bar | **Mirrors the viewer's own search.** The ad looks like the answer to a question they've already typed. | Searched for "halal collagen that doesn't taste of anything"? Found it. Unflavoured, halal, mixes hot or cold. | The Halal Collagen You Searched For |
+| `ad-whiteboard-collagen-decline-1080x1080` | AgeMate whiteboard | **Hand-drawn "lesson" + a decline graph.** It feels like education, not advertising, and the falling line creates gentle urgency. | Your body makes less collagen every year from your mid-20s. Give it the building blocks: one scoop of halal collagen with Vitamin C, daily. | Support Your Collagen Formation |
+| `ad-same-collagen-different-receipt-1080x1350` | "Same smell, different receipt" | **Receipt comparison.** Turns an abstract discount into a physical, side-by-side saving, pushing buyers to the 3-pack and a bigger basket. | Same three pouches. £9 less. The 3-pack is the smartest way to start your 11-week halal collagen ritual. | 3-Pack: Save £9 |
+
+Notes: "about 1% a year from your mid-20s" is a widely cited general estimate of natural collagen decline. Keep the "about"
+and don't present it as a RizqPure result. The receipt ad compares your *own* prices only (3 singles vs the 3-pack),
+which avoids competitor-comparison rules.
