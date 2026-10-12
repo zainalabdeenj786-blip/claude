@@ -5,6 +5,16 @@ artwork, the prices you supplied, and market and scientific research. Sources ar
 
 ---
 
+## 0. Founder direction (October 2026), overrides earlier recommendations where they differ
+
+- **Lead angles:** younger-looking skin · glowing skin · thicker, fuller-looking hair · joints (prayer) · convenience · charity.
+- **Drop:** the taste / "flavourless" angle in ads.
+- **Charity wording:** "a portion of every order goes to charity". **No percentages or figures** in ads.
+- **Competitor problems to hit:** not halal / no named certifier · clumpy · expensive for the dose.
+- Prices: £20 single · £36 for 2 · £51 for 3.
+
+---
+
 ## 1. Brand snapshot
 
 | | |

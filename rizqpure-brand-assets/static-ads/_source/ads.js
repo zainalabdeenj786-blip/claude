@@ -20,6 +20,9 @@ const ICONS = {
   crack: `<svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M30 92V40c0-14 9-26 20-26s20 12 20 26v52"/><path d="M36 40c0-8 6-15 14-15s14 7 14 15"/>
     <path d="M50 25l-5 14 9 8-7 12 6 9"/><path d="M14 30 8 24M86 30l6-6M20 14l-4-7M80 14l4-7"/></svg>`,
+  hair: `<svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 90c-4-22 6-34 4-52s-8-24-2-30"/><path d="M46 92c-2-20 8-34 6-54s-6-24 0-30"/><path d="M62 90c0-20 10-32 8-52s-4-22 2-28"/>
+    <path d="M14 26l-6-4M86 26l6-4M18 12l-4-6M82 12l4-6"/></svg>`,
   cup: `<svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M22 34h48v30c0 12-9 20-20 20h-8c-11 0-20-8-20-20z"/><path d="M70 42h6a10 10 0 0 1 0 20h-6"/>
     <path d="M36 14c-4 5 4 8 0 13M48 12c-4 5 4 8 0 13M60 14c-4 5 4 8 0 13"/><path d="M14 90 88 16"/></svg>`,
@@ -30,11 +33,11 @@ const ADS = [
     sub: 'Not every collagen tells you where it comes from. Ours is 100% hydrolysed <b>halal bovine</b> collagen peptides. Nothing to second-guess.',
     cta: 'Shop halal collagen', foot: 'Supports skin · hair · nails' },
   { key: 'brittle-nails', icon: 'crack', head: 'Brittle nails?<br>Dull skin?',
-    sub: 'One flavourless scoop of halal collagen a day to support <b>skin, hair &amp; nail vitality</b>, from the inside out.',
+    sub: 'One scoop of halal collagen a day to support <b>skin, hair &amp; nail vitality</b>, from the inside out.',
     cta: 'Start your routine', foot: '100% halal bovine collagen' },
-  { key: 'no-chalky-taste', icon: 'cup', head: 'Hate chalky<br>supplements?',
-    sub: 'Zero taste, zero clumps. Dissolves into your <b>coffee, tea or smoothie</b>, hot or cold. Your routine, just upgraded.',
-    cta: 'Shop now', foot: '10% of profits go to charity' },
+  { key: 'fuller-hair', icon: 'hair', head: 'Flat, thin<br>hair days?',
+    sub: 'One scoop of halal collagen a day to support <b>fuller-looking hair</b> and glowing skin. Stirs straight into your morning drink.',
+    cta: 'Start your routine', foot: 'Part of every order goes to charity' },
 ];
 
 function html(ad, W, H, mode) {

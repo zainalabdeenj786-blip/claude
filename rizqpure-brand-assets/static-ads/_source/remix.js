@@ -36,21 +36,21 @@ const ADS = {
     <div style="position:absolute;left:300px;right:44px;top:262px;bottom:44px;background:#E6E4DF;border-radius:20px"></div>
     ${shadowed(56, 300, 660, -4, 2)}
     <div style="position:absolute;right:84px;top:288px;width:480px;text-align:right;color:${INDIGO};z-index:3">
-      ${[['100%', 'halal bovine collagen peptides. Nothing to second-guess'], ['0g', 'sugar, sweeteners or taste. It just disappears into your chai'], ['10%', 'of our profits go to Islamic Relief, every quarter'], ['80p', 'a day. Less than your morning coffee']]
+      ${[['100%', 'halal bovine collagen peptides. Nothing to second-guess'], ['10g', 'of collagen in every scoop, for skin, hair, nails &amp; joints*'], ['1', 'scoop a day. No pills, no clumps, no fuss'], ['80p', 'a day. Less than your morning coffee']]
       .map(([n, t]) => `<div style="margin-bottom:22px"><div style="font-family:'Archivo Black';font-size:74px;line-height:1">${n}</div>
         <div style="font-weight:500;font-size:26px;line-height:1.22;color:#3A3A44;margin-top:4px">${t}</div></div>`).join('')}
     </div>
-    <div style="position:absolute;right:84px;bottom:66px;width:470px;text-align:right;font-size:18px;color:#6B6B75;z-index:3;line-height:1.35">*Per 10 g serving. 80p/day based on a £20, 25-serving pouch.<br>Vitamin C contributes to normal collagen formation for the normal function of skin.</div>
+    <div style="position:absolute;right:84px;bottom:66px;width:470px;text-align:right;font-size:18px;color:#6B6B75;z-index:3;line-height:1.35">*Vitamin C contributes to normal collagen formation for the normal function of skin and cartilage.<br>80p/day based on a £20, 25-serving pouch. Part of every order goes to charity.</div>
   `)],
 
   // 3 ── Tier list meme
   'collagen-tier-list-1080x1080': [1080, 1080, (() => {
     const rows = [['S', '#F07C7C'], ['A', '#F5B57A'], ['B', '#F6E27A'], ['C', '#9BDA7C'], ['D', '#7CB6E8'], ['E', '#8E86D8'], ['F', '#D88AC9']];
     const items = {
-      A: [['Halal marine collagen', 'decent, but that fishy aftertaste']],
+      A: [['Halal marine collagen', 'good, but pricey for a small dose']],
       B: [['"Halal" label', 'no certifier named']],
       C: [['Collagen gummies', 'sugar + tiny dose']],
-      D: [['Flavoured powders', 'sweetener overload']],
+      D: [['Cheap bulk tubs', 'clumpy, gritty, uncertified']],
       E: [['Mystery-source collagen', 'cow? pig? who knows']],
       F: [['Porcine collagen', 'not for us']],
     };
@@ -64,7 +64,7 @@ const ADS = {
         <div style="flex:1;background:#1E1E26;border-radius:6px;display:flex;align-items:center;gap:12px;padding:0 10px">
           ${r === 'S' ? `<div style="height:${rh - 16}px;padding:0 22px 0 6px;border-radius:8px;background:linear-gradient(90deg,#2C2F66,#3D4290);border:2px solid ${GOLD};display:flex;align-items:center;gap:18px;color:#fff">
               <img src="${POUCH}" style="height:${rh - 22}px;transform:rotate(-8deg);filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))">
-              <div><div style="font-weight:800;font-size:34px">RizqPure Halal Collagen</div><div style="font-size:22px;color:#E8D3A6;margin-top:4px">certified halal · tasteless · 10% to charity</div></div></div>`
+              <div><div style="font-weight:800;font-size:34px">RizqPure Halal Collagen</div><div style="font-size:22px;color:#E8D3A6;margin-top:4px">certified halal · no clumps · gives back</div></div></div>`
             : (items[r] || []).map(tile).join('')}
         </div></div>`).join('')}
       <div style="position:absolute;right:34px;bottom:6px;font-weight:600;font-size:22px;color:#fff;opacity:.85">@rizqpure</div>
@@ -89,14 +89,14 @@ const ADS = {
     <div style="position:absolute;inset:0;background:radial-gradient(90% 70% at 30% 25%,#26262B 0%,#0B0B0D 70%)"></div>
     <div style="position:absolute;left:110px;top:250px;color:#fff;font-weight:700;font-size:150px;letter-spacing:-4px;line-height:1">Zero stars.</div>
     <div style="position:absolute;left:112px;top:430px;display:flex;gap:26px">${'<svg width="104" height="104" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.1l-5.7 3.2 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>'.repeat(5)}</div>
-    <div style="position:absolute;left:112px;top:620px;color:#fff;font-weight:500;font-size:66px;line-height:1.2">Couldn't even taste it.</div>
-    <div style="position:absolute;left:112px;top:715px;color:#fff;font-weight:500;font-size:66px">- Your morning coffee</div>
+    <div style="position:absolute;left:112px;top:620px;color:#fff;font-weight:500;font-size:66px;line-height:1.2">Would not recommend.</div>
+    <div style="position:absolute;left:112px;top:715px;color:#fff;font-weight:500;font-size:66px">- Your fine lines</div>
     <div style="position:absolute;left:112px;bottom:130px;display:flex;align-items:center;gap:28px">
       <div style="width:132px;height:132px;border-radius:30px;background:${INDIGO};overflow:hidden;display:flex;align-items:flex-start;justify-content:center;border:2px solid #3A3D7A">
         <img src="${POUCH}" style="height:190px;margin-top:6px"></div>
       <div style="color:#fff;font-weight:600;font-size:60px">RizqPure</div>
     </div>
-    <div style="position:absolute;left:0;right:0;bottom:44px;text-align:center;color:#8C8C96;font-size:22px">Unflavoured halal collagen. Dissolves in hot or cold drinks.</div>
+    <div style="position:absolute;left:0;right:0;bottom:44px;text-align:center;color:#8C8C96;font-size:22px">Halal collagen for skin that glows. Vitamin C contributes to normal collagen formation for the normal function of skin.</div>
   `)],
 };
 

@@ -42,7 +42,7 @@ const ADS = {
       const x = 300 + Math.cos(a) * r * .9, y = 860 + Math.sin(a) * r, s = 3 + (i * 13 % 14);
       return `<div class="a" style="left:${x}px;top:${y}px;width:${s}px;height:${s}px;border-radius:50%;background:#fff;opacity:${.25 + (i % 5) * .12};filter:blur(${i % 3}px)"></div>`;
     }).join('');
-    const items = ["It doesn't name its halal certifier", 'It tastes fishy or chalky in your tea', 'It clumps the second it hits a cold drink', "It's full of sweeteners and fillers", "You're not sure if it's cow, fish… or pig"];
+    const items = ["It doesn't name its halal certifier", 'It clumps the second it hits your drink', "You're paying premium prices for a tiny dose", "It's full of sweeteners and fillers", "You're not sure if it's cow, fish… or pig"];
     return page(1080, 1350, 'linear-gradient(160deg,#C9D6F5 0%,#7F95DE 45%,#4B5BB8 100%)', `
       <div class="a" style="left:-80px;top:520px;width:760px;height:700px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.55),rgba(255,255,255,0));filter:blur(10px)"></div>
       ${dots}
@@ -62,6 +62,7 @@ const ADS = {
     const ic = {
       halal: '<path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M8.5 12l2.4 2.4 4.6-4.8"/>',
       drop: '<path d="M12 3c3.5 4.3 6 7.6 6 10.8A6 6 0 0 1 6 13.8C6 10.6 8.5 7.3 12 3z"/><path d="M9.2 14.5a2.9 2.9 0 0 0 2.8 2.6"/>',
+      hair: '<path d="M8 21c-1-5 1.5-8 1-12S7 4 8.5 3"/><path d="M12 21c-.5-5 2-8 1.5-12S12 4 13.5 3"/><path d="M16 21c0-5 2.5-7.5 2-11.5S17 4 18.5 3.5"/>',
       cup: '<path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M9 3c-1 1.3 1 2 0 3.3M12.5 3c-1 1.3 1 2 0 3.3"/>',
     };
     const row = (k, t, y) => `<div class="a" style="left:70px;top:${y}px;display:flex;align-items:center;gap:30px">
@@ -71,11 +72,12 @@ const ADS = {
     return page(1080, 1080, 'radial-gradient(90% 80% at 75% 55%,#E8E9F7 0%,#D3D5EE 60%,#C3C6E6 100%)', `
       <div class="a" style="left:80px;right:80px;top:150px;height:116px;border-radius:60px;background:#fff;border:3px solid #1B1D3A;display:flex;align-items:center;gap:22px;padding:0 40px;white-space:nowrap">
         <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#1B1D3A" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
-        <div style="font-weight:500;font-size:37px;color:#1B1D3A">halal collagen that doesn't taste of anything</div></div>
-      <div class="a" style="top:292px;width:100%;text-align:center;font-weight:500;font-size:30px;color:#3A3D5C">RizqPure: the smarter daily scoop.</div>
-      ${row('halal', '100% Halal', 420)}${row('drop', 'Zero Taste', 590)}${row('cup', 'Hot or Cold', 760)}
+        <div style="font-weight:500;font-size:37px;color:#1B1D3A">halal collagen for glowing skin and fuller hair</div></div>
+      <div class="a" style="top:292px;width:100%;text-align:center;font-weight:500;font-size:30px;color:#3A3D5C">RizqPure: one scoop, a world of good.</div>
+      ${row('halal', '100% Halal', 420)}${row('drop', 'Glowing Skin*', 590)}${row('hair', 'Fuller Hair*', 760)}
       ${pouch(600, 380, 560, 8, .3)}
-      <div class="a" style="left:70px;bottom:56px;font-weight:600;font-size:56px;color:#1B1D3A">rizqpure.com</div>`);
+      <div class="a" style="left:70px;bottom:56px;font-weight:600;font-size:56px;color:#1B1D3A">rizqpure.com</div>
+      <div class="a" style="right:50px;bottom:30px;width:430px;text-align:right;font-size:16px;color:#3A3D5C;opacity:.8">*Supports skin &amp; hair vitality. Vitamin C contributes to normal collagen formation for the normal function of skin.</div>`);
   })()],
 
   // 4 ── AgeMate: whiteboard lesson
@@ -112,13 +114,23 @@ const ADS = {
         <div style="position:absolute;top:586px;left:0;right:0;text-align:center;font-family:Mono;font-size:16px;color:#333">THANK YOU!</div>
       </div>`;
     return page(1080, 1350, 'linear-gradient(180deg,#F7F6F3,#EFEDE8)', `
-      <div class="a" style="top:96px;width:100%;text-align:center;font-size:24px;color:#555;letter-spacing:1px">100% HALAL · 10% TO CHARITY</div>
+      <div class="a" style="top:96px;width:100%;text-align:center;font-size:24px;color:#555;letter-spacing:1px">100% HALAL · PART OF EVERY ORDER GOES TO CHARITY</div>
       <div class="a" style="top:150px;width:100%;text-align:center;font-family:'Playfair';font-weight:500;font-size:112px;letter-spacing:-3px;color:#16172E;transform:scaleY(1.08)">Same collagen.</div>
       <div class="a" style="top:288px;width:100%;text-align:center;font-family:'Playfair';font-style:italic;font-weight:500;font-size:112px;letter-spacing:-3px;color:#7A5530;transform:scaleY(1.08)">Different receipt.</div>
       ${receipt(120, '3 × SINGLE POUCH', '£60', '', '3 X RIZQPURE HALAL COLLAGEN 250G @ £20.00')}
       ${receipt(600, 'THE 3-PACK', '£51', '£60', '1 X RIZQPURE 3-PACK (3 X 250G) · YOU SAVED £9.00')}
       <div class="a" style="left:0;right:0;bottom:56px;text-align:center;font-weight:700;font-size:36px;color:#16172E">Same 3 pouches. £9 back in your pocket.</div>`);
   })()],
+  // 6 ── Charity: glow up, give back
+  'glow-up-give-back-1080x1350': [1080, 1350, page(1080, 1350, 'radial-gradient(90% 70% at 50% 62%,#FFF8EC 0%,#F6EBD8 55%,#EADBC0 100%)', `
+    <div class="a" style="top:84px;width:100%;text-align:center;font-family:'Playfair';font-weight:700;font-size:40px;color:${NAVY}">RizqPure</div>
+    <div class="a" style="top:160px;width:100%;text-align:center;font-family:'Playfair';font-weight:600;font-size:150px;line-height:1;letter-spacing:-4px;color:${NAVY}">Glow up.</div>
+    <div class="a" style="top:318px;width:100%;text-align:center;font-family:'Playfair';font-style:italic;font-weight:500;font-size:150px;line-height:1;letter-spacing:-4px;color:#9A6B2E">Give back.</div>
+    <div class="a" style="top:500px;left:150px;right:150px;text-align:center;font-weight:500;font-size:34px;line-height:1.4;color:#3B3A4A">Every scoop supports your skin, hair &amp; joints*.<br>Every order helps families in need.</div>
+    <div class="a" style="left:300px;top:700px;width:480px;height:480px;border-radius:50%;background:radial-gradient(closest-side,rgba(201,163,94,.35),rgba(201,163,94,0))"></div>
+    ${pouch(372, 660, 520, -5, .3)}
+    <div class="a" style="left:0;right:0;bottom:92px;text-align:center;font-weight:700;font-size:30px;letter-spacing:3px;color:${NAVY}">A PORTION OF EVERY ORDER GOES TO CHARITY</div>
+    <div class="a" style="left:120px;right:120px;bottom:36px;text-align:center;font-size:17px;color:#5A5868">*${CLAIM}</div>`)],
 };
 
 (async () => {
