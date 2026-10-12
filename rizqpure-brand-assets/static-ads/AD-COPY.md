@@ -47,3 +47,19 @@ Run all three angles as **teaser** creative in one ad set for about 1,000+ impre
 Move the winning angle's **product** version into retargeting. Change one variable per round (angle first, then treatment).
 
 Regenerate or edit: `_source/ads.js` (copy is in the `ADS` array); `node ads.js out`.
+
+---
+
+# "…is calling" ads (`calling-ads/`)
+
+Your pouch floats on a soft rose-violet silk background with phone-style **Decline / Accept** buttons. It plays on
+the instinct to answer a call, and the "Accept" makes the ad feel like a choice. Sizes: square 1080×1080
+(the reference format), feed 1080×1350, story 1080×1920.
+
+| File | On image | Primary text (suggested) | Headline |
+|---|---|---|---|
+| `ad-calling-halal-glow-up-*` | Your halal glow-up is calling... | Your glow-up is on line one. RizqPure is 100% hydrolysed halal bovine collagen that supports skin, hair & nail vitality. Will you pick up? | Answer With RizqPure |
+| `ad-calling-stronger-hair-nails-*` | Stronger hair & nails are calling... | One flavourless scoop a day, stirred into your coffee or tea. Halal collagen that supports hair & nail vitality. Don't leave them on hold. | Halal Collagen, Daily |
+| `ad-calling-collagen-you-can-trust-*` | Collagen you can trust is calling... | No more guessing what's in your collagen. 100% hydrolysed halal bovine peptides, and 10% of profits go to charity. | Collagen You Can Trust |
+
+Source: `_source/calling.js` (headlines in the `ADS` array), pouch cut-out `_source/pouch.png`.
