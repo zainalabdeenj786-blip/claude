@@ -36,7 +36,7 @@ naming the certifier in the primary text ("Certified by …") usually lifts trus
 
 | Field | Copy | Chars |
 |---|---|---|
-| Primary text | If chalky powders put you off supplements, this one won't. RizqPure is flavourless and dissolves into coffee, tea or smoothies, hot or cold. And 10% of profits go to charity. | 176 (hook in first 125) |
+| Primary text | If chalky powders put you off supplements, this one won't. RizqPure is flavourless and dissolves into coffee, tea or smoothies, hot or cold. And 10% of profits go to charity. | 174 (hook in first 125) |
 | Headline | Flavourless Halal Collagen | 26 |
 | Description | Mixes into any drink | 20 |
 
