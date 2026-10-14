@@ -52,3 +52,10 @@ The red outline is the **RizqPure pouch**. The viewer wins when the real pouch l
 - The background photo is by Paul Jarvis on Unsplash (https://unsplash.com/photos/Ven2CV8IJ5A). The Unsplash license allows free commercial use.
 - The audio is quiet ambient noise. Add a trending sound in the TikTok or Instagram app.
 - To re-render: `python3 source/render.py <pouch.jpg> <background.jpg> out.mp4 <frames_dir>`
+
+## Treadmill version (recommended)
+`RizqPure_treadmill_pause_challenge.mp4`: 1080×1920, 4.5 s, 30 fps. This is a 3D-rendered shot (Blender Cycles) with real gym lighting. The pouch rides a long treadmill belt straight at a low camera, then drops off the end.
+- **The answer is frame 101 (3.37 s)**, saved as `07_treadmill_answer_frame.jpg`. Frames 99 and 103 show the "ALMOST HAD IT, 2 frames off…" sticker, so it only appears if someone pauses near the answer.
+- The audio is a treadmill hum and hiss that builds as the pouch gets closer, plus a thud when it drops off. Layer a trending sound on top in the app.
+- The gym environment is the `gym_01` HDRI from Poly Haven (CC0, free for commercial use).
+- To re-render: `WROT=0 python source/treadmill_scene.py gym_01_8k.hdr pouch_front.png outdir anim 1 135 80 20`. Then run `python source/treadmill_composite.py outdir mask.png out.mp4 stills/`. Make the mask with `mode=mask`.
