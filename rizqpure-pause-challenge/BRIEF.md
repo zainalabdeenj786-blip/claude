@@ -45,3 +45,10 @@ The red outline is the **RizqPure pouch**. The viewer wins when the real pouch l
 | `03_overlay_combined.png` | Outline + text together, the easy option |
 | `04_almost_had_it_sticker.png` | Near-miss bait sticker |
 | `05_preview_mock.jpg` | Mock-up of a near-miss frame |
+
+## Finished video
+`RizqPure_pause_challenge.mp4`: 1080×1920, 6 s, 30 fps.
+- The pouch flashes in 8 times. Only **frame 117 (about 3.9 s)** is a perfect fit. That one frame is saved as `06_answer_catch_frame.jpg`, for replying to "impossible" comments.
+- The background photo is by Paul Jarvis on Unsplash (https://unsplash.com/photos/Ven2CV8IJ5A). The Unsplash license allows free commercial use.
+- The audio is quiet ambient noise. Add a trending sound in the TikTok or Instagram app.
+- To re-render: `python3 source/render.py <pouch.jpg> <background.jpg> out.mp4 <frames_dir>`
