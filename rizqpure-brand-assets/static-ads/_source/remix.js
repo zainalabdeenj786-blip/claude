@@ -24,8 +24,8 @@ const ADS = {
     <div style="position:absolute;top:772px;left:200px;right:200px;height:96px;border-radius:60px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:34px">Shop the 3-pack →</div>
     ${shadowed(118, 958, 330, -14, 1)}${shadowed(300, 912, 360, -3, 3)}${shadowed(500, 960, 330, 10, 2)}
     <div style="position:absolute;left:92px;top:902px;z-index:5;background:#fff;border-radius:18px;padding:12px 26px;font-weight:700;font-size:44px;color:#16172E;transform:rotate(-8deg);box-shadow:0 8px 20px rgba(0,0,0,.12)">buy 3</div>
-    <div style="position:absolute;right:86px;top:1010px;z-index:5;background:#16172E;color:#fff;border-radius:18px;padding:12px 26px;font-weight:700;font-size:46px;transform:rotate(7deg);box-shadow:0 8px 20px rgba(0,0,0,.2)">save £9</div>
-    <div style="position:absolute;right:96px;top:1100px;z-index:5;text-align:right;font-weight:600;font-size:30px;color:#4A4A55;line-height:1.3">3 pouches<br><b style="font-size:46px;color:#C8202F">£51</b> <s style="opacity:.6">£60</s></div>
+    <div style="position:absolute;right:86px;top:1010px;z-index:5;background:#16172E;color:#fff;border-radius:18px;padding:12px 26px;font-weight:700;font-size:46px;transform:rotate(7deg);box-shadow:0 8px 20px rgba(0,0,0,.2)">save 15%</div>
+    <div style="position:absolute;right:96px;top:1100px;z-index:5;text-align:right;font-weight:600;font-size:30px;color:#4A4A55;line-height:1.3">3 pouches<br><b style="font-size:46px;color:#C8202F">best value</b></div>
   `)],
 
   // 2 ── Squatch: FACE THE FACTS + big numbers + "Enough said…"
@@ -36,11 +36,11 @@ const ADS = {
     <div style="position:absolute;left:300px;right:44px;top:262px;bottom:44px;background:#E6E4DF;border-radius:20px"></div>
     ${shadowed(56, 300, 660, -4, 2)}
     <div style="position:absolute;right:84px;top:288px;width:480px;text-align:right;color:${INDIGO};z-index:3">
-      ${[['100%', 'halal bovine collagen peptides. Nothing to second-guess'], ['10g', 'of collagen in every scoop, for skin, hair, nails &amp; joints*'], ['1', 'scoop a day. No pills, no clumps, no fuss'], ['80p', 'a day. Less than your morning coffee']]
-      .map(([n, t]) => `<div style="margin-bottom:22px"><div style="font-family:'Archivo Black';font-size:74px;line-height:1">${n}</div>
-        <div style="font-weight:500;font-size:26px;line-height:1.22;color:#3A3A44;margin-top:4px">${t}</div></div>`).join('')}
+      ${[['100%', 'halal bovine collagen peptides. Nothing to second-guess'], ['0%', 'fillers, sweeteners or clumps. One scoop for skin, hair, nails &amp; joints*'], ['15%', 'off when you bundle three pouches. Better value, every scoop']]
+      .map(([n, t]) => `<div style="margin-bottom:40px"><div style="font-family:'Archivo Black';font-size:90px;line-height:1">${n}</div>
+        <div style="font-weight:500;font-size:30px;line-height:1.22;color:#3A3A44;margin-top:6px">${t}</div></div>`).join('')}
     </div>
-    <div style="position:absolute;right:84px;bottom:66px;width:470px;text-align:right;font-size:18px;color:#6B6B75;z-index:3;line-height:1.35">*Vitamin C contributes to normal collagen formation for the normal function of skin and cartilage.<br>80p/day based on a £20, 25-serving pouch. Part of every order goes to charity.</div>
+    <div style="position:absolute;right:84px;bottom:66px;width:470px;text-align:right;font-size:18px;color:#6B6B75;z-index:3;line-height:1.35">*Vitamin C contributes to normal collagen formation for the normal function of skin and cartilage.<br>Part of every order goes to charity.</div>
   `)],
 
   // 3 ── Tier list meme

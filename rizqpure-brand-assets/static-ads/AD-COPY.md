@@ -4,7 +4,7 @@
 
 | Use | Don't use |
 |---|---|
-| **Younger-looking skin** (fine lines, firmness) · **glowing skin** · **thicker, fuller-looking hair** · **joints** (prayer, kneeling, active life) · **convenience** (one scoop, mixes in, no pills) · **charity** ("a portion of every order goes to charity", **no figures**) | The taste / "flavourless" angle · charity percentages or named amounts |
+| **Younger-looking skin** (fine lines, firmness) · **glowing skin** · **thicker, fuller-looking hair** · **joints** (prayer, kneeling, active life) · **convenience** (one scoop, mixes in, no pills) · **charity** ("a portion of every order goes to charity", **no figures**) | The taste / "flavourless" angle · charity percentages or named amounts · **any figures except percentages** (no £ prices, pence-per-day, grams or savings in £. Use "15% off", "100% halal" etc.) |
 
 **Competitor problems to hit:** not halal (or no named certifier) · clumpy / gritty · expensive for the dose. (Generic categories only, never named brands.)
 
@@ -34,8 +34,8 @@ Teaser = soft-focus pouch behind the text (cold audiences). Product = sharp pouc
 
 | File | Format & lever | Primary text | Headline |
 |---|---|---|---|
-| `ad-dont-be-a-mug` | Hismile shock word. **Loss aversion:** paying full price = the mug's move | Don't be a mug. Put RizqPure in one instead 😉 Buy 3 pouches for £51 and save £9: about 11 weeks of your daily halal collagen ritual. | Buy 3, Save £9 |
-| `ad-face-the-facts` | Squatch big numbers. **Confident proof** | 100% halal. 10 g of collagen per scoop. One scoop a day, no clumps. 80p a day. Enough said. | Halal Collagen, Facts Only |
+| `ad-dont-be-a-mug` | Hismile shock word. **Loss aversion:** paying full price = the mug's move | Don't be a mug. Put RizqPure in one instead 😉 Bundle 3 pouches and save 15% on your daily halal collagen ritual. | Buy 3, Save 15% |
+| `ad-face-the-facts` | Squatch big numbers. **Confident proof** | 100% halal. 0% fillers, sweeteners or clumps. 15% off the 3-pack. Enough said. | Halal Collagen, Facts Only |
 | `ad-collagen-tier-list` | Tier-list meme. **Native content + debate bait** (generic categories: pricey marine, uncertified, gummies, clumpy bulk tubs, mystery source, porcine) | We ranked collagen so you don't have to. Where does yours sit? 👇 | The Halal Collagen Tier List |
 | `ad-1-scoop-does-both` | Venn. **Two pains, one fix**: skin + joints for prayer | Glowing skin and comfortable joints for every sujood. One scoop of halal collagen in your morning drink. | One Scoop. Skin + Joints. |
 | `ad-zero-stars` | Inverted review. **The "enemy" hates it**: "Would not recommend. – Your fine lines" | Our harshest critics? Your fine lines. RizqPure halal collagen: Vitamin C contributes to normal collagen formation for the normal function of skin. | Your Fine Lines Hate Us |
@@ -43,13 +43,26 @@ Teaser = soft-focus pouch behind the text (cold audiences). Product = sharp pouc
 | `ad-5-signs-wrong-collagen` | Goodnight Tape checklist. **Self-diagnosis**: not certified, clumps, overpriced, fillers, mystery source | How many of these does your collagen tick? Even one is a sign to switch to certified halal collagen. | Switch to Halal Collagen |
 | `ad-search-bar` | Altiva search bar. **Mirrors their own search**: "halal collagen for glowing skin and fuller hair" | Searched for halal collagen for glowing skin and fuller hair? Found it. One scoop a day, hot or cold. | The Halal Collagen You Searched For |
 | `ad-whiteboard-collagen-decline` | AgeMate whiteboard. **Lesson + decline graph** (anti-ageing urgency) | Your body makes less collagen every year from your mid-20s. Give it the building blocks: one scoop of halal collagen with Vitamin C, daily. | Support Your Collagen Formation |
-| `ad-same-collagen-different-receipt` | Dupe receipts. **Physical saving** (3 singles £60 vs 3-pack £51) | Same three pouches. £9 less. The 3-pack is the smartest way to start your halal collagen ritual. | 3-Pack: Save £9 |
+| `ad-same-collagen-different-receipt` | Dupe receipts. **Physical saving** (3 singles at full price vs the 3-pack at 15% off) | Same three pouches. 15% less. The 3-pack is the smartest way to start your halal collagen ritual. | 3-Pack: Save 15% |
 | `ad-glow-up-give-back` | Editorial serif. **Purpose purchase**: "Glow up. Give back." | Glow up, give back. Every scoop supports your skin, hair & joints, and a portion of every order goes to charities helping families in need. | Glow Up. Give Back. |
+
+## 4. "Missing from this receipt" (`receipt-ads/`), based on the Grüns format
+
+**Lever:** a "year to date" receipt of everything already spent on hair or skincare (prices shown as £££, so no figures), then
+**MISSING FROM THIS RECEIPT: Halal Collagen**. It turns sunk cost into the problem and reframes the fix as coming from within. Offer: *Save up to 15% on bundles*.
+
+| File | Primary text | Headline |
+|---|---|---|
+| `ad-missing-from-receipt-hair-*` | Shampoos, serums, salon trips, silk underscarves… and still waiting for fuller-looking hair? The one thing missing from your routine works from within. RizqPure Halal Collagen. Save up to 15% on bundles. | Missing From Your Hair Routine |
+| `ad-missing-from-receipt-skin-*` | Retinol, Vitamin C serum, facials, eye cream… your skincare shelf is full. What's missing works from within: RizqPure Halal Collagen for glowing, younger-looking skin. Save up to 15% on bundles. | Missing From Your Skincare |
+
+`printable-receipt-hair.png` / `printable-receipt-skin.png`: print these (A6 or postcard size) and photograph someone holding one, like the
+original Grüns ad. A real person and real hands make this format convert best; then overlay the headline and button from the ad files.
 
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
-2. **Warm / retargeting:** `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
+2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
 3. Change one variable per round (angle, then format, then offer).
 
-Before running: confirm Vitamin C is ≥ 12 mg per 10 g scoop (needed for the claim line) and that £20 / £51 are the live prices.
+Before running: confirm Vitamin C is ≥ 12 mg per 10 g scoop (needed for the claim line) and that the bundle discounts (2-pack 10%, 3-pack 15%) are live.
 Source files: `_source/` (`ads.js`, `calling.js`, `remix.js`, `remix2.js`); copy lives in each file's ad definitions.

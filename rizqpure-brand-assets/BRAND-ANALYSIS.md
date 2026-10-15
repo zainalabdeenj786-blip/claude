@@ -10,6 +10,7 @@ artwork, the prices you supplied, and market and scientific research. Sources ar
 - **Lead angles:** younger-looking skin · glowing skin · thicker, fuller-looking hair · joints (prayer) · convenience · charity.
 - **Drop:** the taste / "flavourless" angle in ads.
 - **Charity wording:** "a portion of every order goes to charity". **No percentages or figures** in ads.
+- **No figures in ads except percentages** (e.g. "15% off", "100% halal"). No £ prices, pence-per-day or grams.
 - **Competitor problems to hit:** not halal / no named certifier · clumpy · expensive for the dose.
 - Prices: £20 single · £36 for 2 · £51 for 3.
 

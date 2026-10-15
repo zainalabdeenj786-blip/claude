@@ -29,7 +29,7 @@ const ADS = {
       ${lab(cx, cy - off - R + 30, 'HALAL YOU CAN<br>TRUST')}${lab(cx - off - R + 120, cy - 22, 'ONE SCOOP,<br>NOT TEN PILLS')}
       ${lab(cx + off + R - 120, cy - 22, 'JOINTS FOR<br>PRAYER*')}${lab(cx, cy + off + R - 80, 'SKIN THAT<br>GLOWS*')}
       ${pouch(cx - 150, cy - 222, 430, 0, .25)}
-      <div class="a" style="left:60px;bottom:96px;font-family:Mono;font-size:20px;line-height:1.3;color:${c}">HALAL COLLAGEN<br>10G PEPTIDES<br>+ VITAMIN C</div>
+      <div class="a" style="left:60px;bottom:96px;font-family:Mono;font-size:20px;line-height:1.3;color:${c}">HALAL COLLAGEN<br>PURE PEPTIDES<br>+ VITAMIN C</div>
       <div class="a" style="left:0;right:0;bottom:118px;text-align:center;font-family:Mono;font-size:20px;line-height:1.3;color:${c}">NOURISHMENT,<br>MADE SIMPLE.</div>
       <div class="a" style="right:60px;bottom:96px;text-align:right;font-family:Mono;font-size:20px;line-height:1.3;color:${c}">KEEP YOUR<br>DAILY ROUTINE<br>MINIMAL</div>
       <div class="a" style="left:60px;right:60px;bottom:34px;text-align:center;font-size:17px;color:${c};opacity:.75">*${CLAIM}</div>`);
@@ -108,7 +108,7 @@ const ADS = {
         </div>
         <div style="position:absolute;top:322px;left:28px;right:28px;text-align:center;font-family:Mono;font-size:22px;color:#333">${label}</div>
         <div style="position:absolute;top:366px;left:28px;right:28px;border-top:3px solid #222"></div>
-        <div style="position:absolute;top:378px;left:0;right:0;text-align:center;font-weight:600;font-size:64px;color:#111">${price}${strike ? ` <s style="font-size:34px;color:#999">${strike}</s>` : ''}</div>
+        <div style="position:absolute;top:378px;left:0;right:0;text-align:center;font-weight:700;font-size:54px;color:#111">${price}${strike ? ` <s style="font-size:34px;color:#999">${strike}</s>` : ''}</div>
         <div style="position:absolute;top:470px;left:30px;right:30px;font-family:Mono;font-size:12px;line-height:1.3;color:#777;text-align:center">${tag}</div>
         <div style="position:absolute;top:510px;left:40px;right:40px;height:60px;background:repeating-linear-gradient(90deg,#111 0 3px,#fff 3px 5px,#111 5px 6px,#fff 6px 10px,#111 10px 14px,#fff 14px 16px)"></div>
         <div style="position:absolute;top:586px;left:0;right:0;text-align:center;font-family:Mono;font-size:16px;color:#333">THANK YOU!</div>
@@ -117,9 +117,9 @@ const ADS = {
       <div class="a" style="top:96px;width:100%;text-align:center;font-size:24px;color:#555;letter-spacing:1px">100% HALAL · PART OF EVERY ORDER GOES TO CHARITY</div>
       <div class="a" style="top:150px;width:100%;text-align:center;font-family:'Playfair';font-weight:500;font-size:112px;letter-spacing:-3px;color:#16172E;transform:scaleY(1.08)">Same collagen.</div>
       <div class="a" style="top:288px;width:100%;text-align:center;font-family:'Playfair';font-style:italic;font-weight:500;font-size:112px;letter-spacing:-3px;color:#7A5530;transform:scaleY(1.08)">Different receipt.</div>
-      ${receipt(120, '3 × SINGLE POUCH', '£60', '', '3 X RIZQPURE HALAL COLLAGEN 250G @ £20.00')}
-      ${receipt(600, 'THE 3-PACK', '£51', '£60', '1 X RIZQPURE 3-PACK (3 X 250G) · YOU SAVED £9.00')}
-      <div class="a" style="left:0;right:0;bottom:56px;text-align:center;font-weight:700;font-size:36px;color:#16172E">Same 3 pouches. £9 back in your pocket.</div>`);
+      ${receipt(120, '3 × SINGLE POUCH', 'FULL PRICE', '', '3 X RIZQPURE HALAL COLLAGEN · PAID IN FULL')}
+      ${receipt(600, 'THE 3-PACK', '15% OFF', '', '1 X RIZQPURE 3-PACK · YOU SAVED 15%')}
+      <div class="a" style="left:0;right:0;bottom:56px;text-align:center;font-weight:700;font-size:36px;color:#16172E">Same 3 pouches. 15% back in your pocket.</div>`);
   })()],
   // 6 ── Charity: glow up, give back
   'glow-up-give-back-1080x1350': [1080, 1350, page(1080, 1350, 'radial-gradient(90% 70% at 50% 62%,#FFF8EC 0%,#F6EBD8 55%,#EADBC0 100%)', `
