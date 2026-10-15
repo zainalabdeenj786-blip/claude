@@ -59,6 +59,19 @@ Teaser = soft-focus pouch behind the text (cold audiences). Product = sharp pouc
 `printable-receipt-hair.png` / `printable-receipt-skin.png`: print these (A6 or postcard size) and photograph someone holding one, like the
 original Grüns ad. A real person and real hands make this format convert best; then overlay the headline and button from the ad files.
 
+## 5. Beauty-brand formats (`beauty-formats/`), based on Shifah's ads (all 1080×1350)
+
+| File | Format & lever | Primary text | Headline |
+|---|---|---|---|
+| `ad-big-percent-100-halal` | "90% of people agreed" giant number. **Big-stat social proof.** Uses a *true* 100% (halal), not an invented survey figure | 100% halal. No guesswork. Halal collagen that supports glowing, younger-looking skin and fuller-looking hair, in one scoop that never clumps. | 100% Halal Collagen |
+| `ad-glow-up-starts-this-week` | "Glowing skin by next week" calendar. **Start-today urgency.** The urgency is about starting the habit, not a 7-day result promise | Your glow-up starts the day you do. One scoop of halal collagen in your morning drink: day one is today. | Start Your Glow-Up Today |
+| `ad-testimonial-finally-glowing` | Testimonial headline + stars. **Customer voice.** Quote taken from your site's existing testimonial | "My skin is glowing like never before." Join the women making halal collagen part of their daily ritual. Part of every order goes to charity. | Real Glow, Real Customers |
+| `ad-thin-flat-hair-routine` | Problem → routine equation → offer. **Simple maths:** RizqPure + your morning drink + every day = 15% off bundles | Thin, flat, lifeless hair? Add one scoop of RizqPure to your morning drink, every day, and support fuller-looking hair from within. 15% off when you bundle. | Fuller-Looking Hair Ritual |
+| `ad-made-easier-halal-collagen` | Four icons around the product. **Benefit map:** skin, hair, joints, charity, all at a glance | Glowing skin, fuller-looking hair, joints for prayer, and part of every order goes to charity. Your glow-up made easier with certified halal collagen. | Certified Halal Collagen |
+
+⚠️ The testimonial ad must use a **genuine** customer quote. The current one comes from your website; keep it only if a real
+customer wrote it. Swap in any real review word-for-word, with the reviewer's permission.
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
