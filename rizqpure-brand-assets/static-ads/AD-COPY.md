@@ -118,6 +118,28 @@ place the RizqPure pouch PNG (`png-transparent/` or `_source/pouch.png`) on top:
 Always use the **real** pouch image in the final ad, not an AI-drawn one, so the packaging isn't misrepresented.
 Breakouts are named as a pain point only; no ad promises to clear them.
 
+## 7. 3-Pack bundle ads (`3-pack-bundle-ads/`)
+
+**Bundle angle:** collagen is about daily consistency, so the 3-pack is *a ritual, not a taster*: you never run out, and you save 15%.
+Every ad pairs a pain point (fine lines, shedding, stiff knees) with the offer.
+
+| File | Based on | Primary text | Headline |
+|---|---|---|---|
+| `stop-buying-one` | Hismile shock word | Stop buying one. Fine lines, shedding and stiff joints need consistency, not a one-off. Get the 3-pack and save 15%. | Stop Buying One |
+| `big-15-percent` | Shifah big number | 15% off the 3-pack. Supports younger-looking skin, fuller-looking hair and joints for prayer, in one halal ritual. | 15% Off The 3-Pack |
+| `one-bundle-three-concerns` | Sunbase Venn | Fine lines, hair shedding, stiff knees in sujood. One bundle covers all three concerns. 15% off the 3-pack. | One Bundle, Three Concerns |
+| `taster-vs-ritual` | Shifah "concealer" | One pouch is a taster. The 3-pack is a ritual: 15% off, and you never run out mid-routine. | A Ritual, Not A Taster |
+| `split-skin-bundle` / `split-hair-bundle` / `split-joints-bundle` | Split cartoon | Fine lines? Shedding? Stiff knees? Real change takes consistency. Bundle 3 and save 15%. | Bundle 3 & Save 15% |
+| `myths-one-pouch` | Myths vs Facts | Myth: one pouch is enough to try collagen properly. Fact: it's about daily consistency, and the 3-pack saves 15%. | Myth vs Fact: The 3-Pack |
+| `ways-to-buy-tier-list` | Tier list (1:1) | We ranked every way to buy collagen. S-tier? The RizqPure 3-Pack. Where does your current routine sit? 👇 | The Collagen Buying Tier List |
+| `chat-bought-three` | Bestie iMessage | "Wait, you bought THREE??" Yes: 15% off and never running out. The halal collagen bundle your group chat needs. | Why Bestie Bought Three |
+| `whiteboard-bundle-maths` | AgeMate whiteboard | The maths is simple: one pouch is full price, the 3-pack is 15% off. Skin + hair + joints = sorted. | The 3-Pack Maths |
+| `search-bundle` | Altiva search bar | Searching for the best-value halal collagen bundle? The RizqPure 3-Pack: 15% off, every time. | Best-Value Halal Collagen |
+| `calling-15-off` | "…is calling" (1:1) | Your 15% off is calling... Pick up the RizqPure 3-Pack: halal collagen for skin, hair & joints. | Your 15% Off Is Calling |
+| `ritual-stocked` | Shifah "ancient ritual" | A daily ritual, fully stocked. The 3-pack: 15% off, no fillers, no clumps, just halal collagen. | A Ritual, Fully Stocked |
+
+Also bundle-ready from earlier rounds: `dont-be-a-mug`, `same-collagen-different-receipt`, `missing-from-receipt` (hair & skin).
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
