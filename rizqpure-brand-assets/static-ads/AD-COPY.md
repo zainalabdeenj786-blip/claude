@@ -72,6 +72,33 @@ original Grüns ad. A real person and real hands make this format convert best; 
 ⚠️ The testimonial ad must use a **genuine** customer quote. The current one comes from your website; keep it only if a real
 customer wrote it. Swap in any real review word-for-word, with the reviewer's permission.
 
+## 6. Pain-point ads (`pain-point-ads/`), based on Shifah formats round 2 (all 1080×1350)
+
+### Pain-point map (use these words, they're what customers say)
+| Category | Biggest pain points | Desire (say "supports…") |
+|---|---|---|
+| **Skin** | fine lines & wrinkles · loss of firmness · dull, tired skin · breakouts | glowing, younger-looking skin |
+| **Hair** | shedding every wash · thinning · postpartum shedding · breakage | thicker, fuller-looking hair |
+| **Joints** | stiff knees in sujood · aching after prayer · creaky joints · "it's just age" | joints that keep up with your prayers |
+
+| File | Format & lever | Primary text | Headline |
+|---|---|---|---|
+| `ad-concealer-fine-lines` | "Concealer hides… / Shifah fades them." **Cover-up vs real fix** | Concealer covers fine lines for a day. RizqPure Halal Collagen supports younger-looking skin from within, every day. | Real Support, Not Just Cover |
+| `ad-concealer-hair-thinning` | Same format, hair. **Hair fibres vs support from within** | Hair fibres hide thinning for a day. RizqPure supports thicker, fuller-looking hair from within. One scoop, every morning. | Support Hair From Within |
+| `ad-timeless-ritual` | "an ancient ritual. a modern formula." **Premium brand mood** | A timeless ritual, a modern formula. No fillers, no clumps, just 100% halal collagen for skin, hair and joints. | A Timeless Halal Ritual |
+| `ad-split-skin` | Split screen + reframe. **"It's not just your cream."** | Fine lines, breakouts, dull skin? Creams work on the surface, but your skin's collagen is built from within. | It's Not Just Your Cream |
+| `ad-split-hair` | **"Hair shedding every wash? It's not just your shampoo."** | More hair in the drain every wash? Shampoo can't reach the root of it. Support thicker, fuller-looking hair from within. | It's Not Just Your Shampoo |
+| `ad-split-joints` | **"Stiff knees in sujood? It's not just your age."** | Stiff knees going into sujood? Your cartilage relies on collagen. Support your joints from within with halal collagen. | Joints For Every Prayer |
+| `ad-chat-hair-shedding` | iMessage "Bestie" chat. **Friend-to-friend proof** (postpartum shedding) | When your bestie asks what you're doing to your hair 👀 RizqPure Halal Collagen: one scoop in your morning coffee. | What Bestie Is Using |
+| `ad-chat-fine-lines` | iMessage chat, skin (fine lines + glow) | "Okay your skin is GLOWING." The halal collagen your group chat is asking about. | The Glow Everyone's Asking About |
+| `ad-myths-skin` | Myths vs Facts. **Debunk → authority** | Myth: fine lines are only a skincare problem. Fact: your skin's collagen is built from within. | Myth vs Fact: Fine Lines |
+| `ad-myths-hair` | Myths vs Facts, hair | Myth: hair shedding is just something you live with. Fact: your hair needs nourishment from within too. | Myth vs Fact: Hair Shedding |
+| `ad-myths-joints` | Myths vs Facts, joints | Myth: stiff joints are just part of getting older. Fact: your cartilage relies on collagen. | Myth vs Fact: Stiff Joints |
+| `ad-myths-halal` | Myths vs Facts, halal quality | Myth: halal collagen means compromising on quality. Fact: 100% hydrolysed halal bovine peptides, no fillers, no clumps. | Halal Without Compromise |
+
+Note: the chat ads are styled as conversations, not real customer screenshots. Don't present them as genuine reviews.
+Breakouts are named as a pain point only; no ad promises to clear them.
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
