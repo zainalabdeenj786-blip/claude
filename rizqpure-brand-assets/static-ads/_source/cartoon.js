@@ -3,9 +3,9 @@
 function person(id, mood, opt) {
   const bad = mood === 'bad';
   const skin = bad ? '#C79C7E' : '#F2C7A5', skinSh = bad ? '#A97F63' : '#E3AE8A';
-  const hij = opt.older ? (bad ? '#7C7466' : '#3E4486') : (bad ? '#B9946A' : '#F3E9DC');
-  const hijSh = opt.older ? (bad ? '#5E574B' : '#2C2F66') : (bad ? '#8E6D49' : '#E2D3C0');
-  const robe = opt.older ? (bad ? '#6A6358' : '#2C2F66') : (bad ? '#A3845F' : '#EADFCF');
+  const hij = (opt.hijab && !bad) ? opt.hijab[0] : opt.older ? (bad ? '#7C7466' : '#3E4486') : (bad ? '#B9946A' : '#F3E9DC');
+  const hijSh = (opt.hijab && !bad) ? opt.hijab[1] : opt.older ? (bad ? '#5E574B' : '#2C2F66') : (bad ? '#8E6D49' : '#E2D3C0');
+  const robe = (opt.hijab && !bad) ? opt.hijab[2] : opt.older ? (bad ? '#6A6358' : '#2C2F66') : (bad ? '#A3845F' : '#EADFCF');
   const tex = bad ? `url(#rope-${id})` : `url(#satin-${id}-${opt.older ? 'o' : 'y'})`;
   const brow = bad
     ? '<path d="M222 285 Q250 268 282 282" /><path d="M318 282 Q350 268 378 285"/>'
@@ -82,3 +82,11 @@ function avatar(id, size) {
   return `<svg width="${size}" height="${size}" viewBox="150 120 300 300" xmlns="http://www.w3.org/2000/svg">${defs}${person(id, 'good', {})}</svg>`;
 }
 module.exports.avatar = avatar;
+
+// head-and-shoulders portrait of one "glowing" person, for family/avatars
+function portrait(id, size, opt = {}) {
+  const full = cartoon({ id, variant: 'skin' });
+  const defs = full.slice(full.indexOf('<defs>'), full.indexOf('</defs>') + 7);
+  return `<svg width="${size}" height="${size * 1.1}" viewBox="60 60 480 528" xmlns="http://www.w3.org/2000/svg">${defs}${person(id, 'good', opt)}</svg>`;
+}
+module.exports.portrait = portrait;

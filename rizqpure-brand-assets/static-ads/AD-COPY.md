@@ -140,6 +140,26 @@ Every ad pairs a pain point (fine lines, shedding, stiff knees) with the offer.
 
 Also bundle-ready from earlier rounds: `dont-be-a-mug`, `same-collagen-different-receipt`, `missing-from-receipt` (hair & skin).
 
+## 8. 3-Pack "you" call-out ads (`3-pack-you-ads/`)
+
+**Competitor check:** UK collagen brands sell bundles with a discount plus "3-month supply" (Absolute Collagen, Myvitamins), "beauty from
+within routine" value framing (Imbibe, MKBM) and seasonal bundles (Sunna: Ramadan, Eid, Black Friday). **None speak directly to one
+person, or frame the bundle around family.** These ads do both. The single pouch is always presented positively (a great way to start);
+the 3-pack is the next step, not a correction.
+
+| File | Lever | Primary text | Headline |
+|---|---|---|---|
+| `this-is-for-you-if` | **Call-out checklist** (self-identification) | This is for you if you've found more hair in the drain, spotted new fine lines, felt your knees in sujood, or you're tired of checking labels. Your 3-pack is 15% off. | This Is For You |
+| `one-for-you-mum-sister` | **Family share / gifting** (unique to RizqPure) | One for you, one for Mum, one for your sister. Your fine lines, her knees in sujood, her postpartum shedding. Share the 3-pack and save 15%. | Share The Glow: 3-Pack |
+| `loved-your-first-pouch` | **Retarget single buyers** (praises their choice) | You loved your first pouch. Now keep the glow going: stock up with the 3-pack and save 15%, so you never break your ritual. | Keep The Glow Going |
+| `yes-you` | **Direct pointing call-out** + procrastination trigger | Yes, you. You've been "meaning to start" collagen for months. Your skin, hair and knees have waited long enough. Start properly with the 3-pack at 15% off. | Yes, You. Start Today. |
+| `you-fine-lines` | **Validation** ("you're not imagining it") | You're not imagining it: those fine lines are real, and you deserve more than another cream. Support younger-looking skin from within. 15% off the 3-pack. | You're Not Imagining It |
+| `you-hair-drain` | **Validation + relief** | You deserve better than counting hairs in the drain. Support thicker, fuller-looking hair from within. 15% off the 3-pack. | You Deserve Better |
+| `you-knees-sujood` | **Faith-specific pain** | Your knees shouldn't dread sujood. Support your joints from within with halal collagen. 15% off the 3-pack. | For Every Sujood |
+| `choose-your-start` | **Two positive choices** (curious → one; ready → three) | Just curious? Start with one pouch. Ready for real change? Go for the 3-pack and save 15%. Either way, you're starting. | How Will You Start? |
+| `dear-you-letter` | **Handwritten personal letter** (emotional, one-to-one) | Dear you, you check every label, you kneel in sujood five times a day, and you kept going anyway. You deserve collagen you can trust. Love, RizqPure. | A Note For You |
+| `ramadan-ritual` | **Seasonal** (competitor-proven, done personally) | Long fasts can leave you looking and feeling drained. One scoop at suhoor, all month long. Your Ramadan 3-pack is 15% off. | Your Ramadan Ritual |
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
