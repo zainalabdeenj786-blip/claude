@@ -6,6 +6,7 @@ const F = f => path.join(__dirname, 'fonts', f);
 const face = (n, f, w = 'normal', s = 'normal') => `@font-face{font-family:'${n}';src:url(data:font/ttf;base64,${b64(F(f))});font-weight:${w};font-style:${s}}`;
 const FONTS = face('DM Sans', 'DMSans%5Bopsz,wght%5D.ttf', '100 1000') + face('Playfair', 'PlayfairDisplay%5Bwght%5D.ttf', '400 900') +
   face('Playfair', 'PlayfairDisplay-Italic%5Bwght%5D.ttf', '400 900', 'italic') + face('Archivo Black', 'ArchivoBlack-Regular.ttf') + face('DM Serif', 'DMSerifDisplay-Regular.ttf');
+const { cartoon, avatar } = require('./cartoon.js');
 const POUCH = 'data:image/png;base64,' + b64(path.join(__dirname, '..', 'call', 'pouch.png'));
 const NAVY = '#1F2457', INK = '#2B2540', GOLD = '#C9A35E';
 const SKIN = 'Vitamin C contributes to normal collagen formation for the normal function of skin.';
@@ -49,20 +50,14 @@ const ICON = {
 };
 const ic = (k, bad, c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">${ICON[k](bad)}</svg>`;
 const split = (k, l1, l2, hl, sub, lbadT, lgoodT, claim) => page('#fff', `
-  <div class="a" style="top:70px;width:100%;text-align:center;font-family:'Archivo Black';font-size:76px;line-height:1.06;color:#121212">${l1}<br>${l2}</div>
-  <div class="a" style="top:240px;left:0;right:0;text-align:center"><span style="font-family:'Archivo Black';font-size:50px;line-height:1.2;color:#121212;background:#F2C462;padding:4px 18px;white-space:nowrap">${hl}</span></div>
-  <div class="a" style="top:336px;left:110px;right:110px;text-align:center;font-size:32px;line-height:1.35;color:#222">${sub}</div>
-  <div class="a" style="left:60px;top:500px;width:480px;height:720px;border-radius:30px 0 0 30px;overflow:hidden;
-     background:radial-gradient(120% 90% at 30% 30%,#C9BFB3 0%,#A99C8E 60%,#8E8174 100%)">
-    <svg width="480" height="720" style="position:absolute;inset:0;opacity:.35">${Array.from({ length: 26 }, (_, i) => `<path d="M${(i * 53) % 480} ${(i * 97) % 720} l${18 - (i % 5) * 9} ${30 + (i % 4) * 8} l${12 - (i % 3) * 10} ${22}" stroke="#5C5045" stroke-width="2" fill="none"/>`).join('')}</svg>
-    <div style="position:absolute;left:60px;top:70px;opacity:.85">${ic(k, true, '#3E352D', 230)}</div>
-    <div style="position:absolute;left:40px;bottom:50px;font-weight:800;font-size:34px;line-height:1.15;color:#2E2721">${lbadT}</div></div>
-  <div class="a" style="left:540px;top:500px;width:480px;height:720px;border-radius:0 30px 30px 0;overflow:hidden;
-     background:radial-gradient(120% 90% at 70% 30%,#FFF7EE 0%,#F4E3EC 55%,#DCD3F0 100%)">
-    <div style="position:absolute;right:60px;top:70px">${ic(k, false, '#3B3F86', 230)}</div>
-    <div style="position:absolute;right:40px;bottom:50px;text-align:right;font-weight:800;font-size:34px;line-height:1.15;color:#2C2F66">${lgoodT}</div></div>
-  <div class="a" style="left:539px;top:500px;width:2px;height:720px;background:rgba(255,255,255,.8)"></div>
-  ${pouch(392, 690, 420, 0, .38)}
+  <div class="a" style="top:56px;width:100%;text-align:center;font-family:'Archivo Black';font-size:74px;line-height:1.06;color:#121212">${l1}<br>${l2}</div>
+  <div class="a" style="top:222px;left:0;right:0;text-align:center"><span style="font-family:'Archivo Black';font-size:50px;line-height:1.2;color:#121212;background:#F2C462;padding:4px 18px;white-space:nowrap">${hl}</span></div>
+  <div class="a" style="top:310px;left:110px;right:110px;text-align:center;font-size:32px;line-height:1.35;color:#222">${sub}</div>
+  <div class="a" style="left:210px;top:410px">${cartoon({ id: 'sp' + k, variant: k === 'joint' ? 'joints' : k, w: 660, h: 880 })}</div>
+  <div class="a" style="left:40px;top:560px;font-weight:800;font-size:30px;line-height:1.15;color:#6B4E33">${lbadT}</div>
+  <div class="a" style="right:40px;top:560px;text-align:right;font-weight:800;font-size:30px;line-height:1.15;color:#2C2F66">${lgoodT}</div>
+  ${pouch(447, 1000, 270, 0, .4)}
+  <div class="a" style="left:0;right:0;bottom:0;height:64px;background:rgba(255,255,255,.92)"></div>
   ${foot(claim)}`);
 
 // ── 4. iMessage chat ────────────────────────────────────────────────────
@@ -84,7 +79,7 @@ const chat = (msgs) => page('#FFFFFF', `
     <svg width="58" height="28" viewBox="0 0 29 14"><rect x=".5" y=".5" width="24" height="13" rx="3.5" fill="none" stroke="#000"/><rect x="2.5" y="2.5" width="20" height="9" rx="2"/><rect x="26" y="4.5" width="2" height="5" rx="1"/></svg></div>
   <div class="a" style="left:0;right:0;top:80px;height:170px;border-bottom:1px solid #DDD;background:#F7F7F8">
     <div style="position:absolute;left:50px;top:50px;font-size:60px;color:#111;font-family:Inter">‹</div>
-    <div style="position:absolute;left:480px;top:10px;width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#C9A35E,#8E86BE);display:flex;align-items:center;justify-content:center;font-family:Inter;font-weight:700;font-size:44px;color:#fff">B</div>
+    <div style="position:absolute;left:480px;top:10px;width:120px;height:120px;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,#F4E3EC,#DCD3F0)">${avatar('av', 120)}</div>
     <div style="position:absolute;left:0;right:0;top:132px;text-align:center;font-family:Inter;font-size:26px;color:#111">Bestie</div>
     <svg style="position:absolute;right:56px;top:56px" width="58" height="40" viewBox="0 0 29 20" fill="none" stroke="#111" stroke-width="1.6"><rect x="1" y="3" width="18" height="14" rx="3"/><path d="M19 8l8-4v12l-8-4"/></svg></div>
   <div class="a" style="left:44px;right:44px;top:276px">${msgs}</div>
@@ -97,7 +92,9 @@ const myth = (m, f, claim) => page('#2A2238', `
   <div class="a" style="left:0;top:0;width:540px;height:1350px;background:radial-gradient(80% 60% at 50% 35%,#5B4E63 0%,#3A3044 60%,#241D2C 100%)"></div>
   <div class="a" style="left:540px;top:0;width:540px;height:1350px;background:radial-gradient(80% 60% at 50% 35%,#C9A9C0 0%,#8A6D8A 55%,#4E3D58 100%)"></div>
   <div class="a" style="left:0;top:0;width:540px;height:1350px;background:repeating-linear-gradient(115deg,rgba(0,0,0,.08) 0 3px,transparent 3px 9px);opacity:.7"></div>
-  <div class="a" style="left:640px;top:180px;width:340px;height:340px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,240,230,.55),rgba(255,240,230,0))"></div>
+  <div class="a" style="left:-270px;top:-40px;opacity:.9">${cartoon({ id: 'my' + Math.random().toString(36).slice(2, 7), variant: 'skin', w: 1620, h: 2160 })}</div>
+  <div class="a" style="left:0;top:0;width:540px;height:1350px;background:rgba(30,22,40,.55)"></div>
+  <div class="a" style="left:540px;top:0;width:540px;height:1350px;background:rgba(60,40,70,.30)"></div>
   <div class="a" style="left:0;right:0;top:150px;text-align:center"><span style="display:inline-block;padding:12px 40px;border-radius:22px;background:rgba(232,210,224,.85);
     font-family:'Archivo Black';font-size:80px;color:#fff;text-shadow:0 2px 10px rgba(60,30,60,.4)">MYTHS VS FACTS</span></div>
   <div class="a" style="left:30px;top:520px;width:380px;height:400px;border-radius:30px;background:rgba(98,56,86,.9);border:3px solid rgba(255,255,255,.35);padding:40px 34px;text-align:center;color:#fff">

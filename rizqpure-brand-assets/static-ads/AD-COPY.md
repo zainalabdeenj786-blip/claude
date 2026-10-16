@@ -97,6 +97,25 @@ customer wrote it. Swap in any real review word-for-word, with the reviewer's pe
 | `ad-myths-halal` | Myths vs Facts, halal quality | Myth: halal collagen means compromising on quality. Fact: 100% hydrolysed halal bovine peptides, no fillers, no clumps. | Halal Without Compromise |
 
 Note: the chat ads are styled as conversations, not real customer screenshots. Don't present them as genuine reviews.
+
+**Illustrations:** the split ads, the Myths vs Facts backgrounds and the chat avatar use a hand-drawn vector cartoon (`_source/cartoon.js`):
+a hijabi woman, split down the middle. One side has a frayed rope hijab and dull, dry, worried skin; the other a satin hijab and a
+glowing smile. The joints version shows an older woman in a navy hijab. The hair version adds shed strands on the rough side.
+
+### Photo versions: prompts for an AI image generator (Gemini, Midjourney, ChatGPT)
+No image generator is available in this build environment, so photoreal people need generating separately. Paste these, then
+place the RizqPure pouch PNG (`png-transparent/` or `_source/pouch.png`) on top:
+- **Myths vs Facts background:** *"Split-screen close-up portrait of the same British South Asian woman in her 30s wearing a soft beige
+  hijab. Left half: tired, dull, dry skin, flat lighting, slightly desaturated. Right half: glowing, dewy, healthy skin, warm soft
+  light. Natural phone-camera look, no makeup, neutral background, 4:5 vertical."*
+- **Split cartoon (alternative style):** *"3D Pixar-style illustration of a young hijabi woman, split vertically. Left half: hijab made of
+  rough frayed rope, dry cracked skin, worried face biting lip. Right half: smooth silk cream hijab, glowing skin, happy smile, hand on
+  cheek. Plain white background, 4:5."*
+- **Chat photo (vanity shot):** *"Phone photo of a navy collagen pouch standing on a marble bathroom vanity next to a gold mirror, a
+  coffee mug and gold jewellery, warm morning light, slightly blurred background, casual Instagram look."* (Then swap in the real pouch.)
+- **"Missing from this receipt" hand-held:** use the printable receipts in `receipt-ads/` with a real photo.
+
+Always use the **real** pouch image in the final ad, not an AI-drawn one, so the packaging isn't misrepresented.
 Breakouts are named as a pain point only; no ad promises to clear them.
 
 ## Testing order (suggested)
