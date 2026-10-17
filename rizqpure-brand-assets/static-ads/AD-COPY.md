@@ -193,6 +193,22 @@ No yellow backgrounds; yellow appears only as a marker underline on **one** key 
 | `every-morning-without-fail` | **Every** morning. Without fail. | Every morning, without fail. One scoop in your coffee or chai for skin, hair and joints. Stocked up with the 3-pack, 15% off. | Every Morning, Sorted |
 | `suhoor-to-sujood` | From suhoor to *sujood.* | From suhoor to sujood: a daily halal ritual for glowing skin, fuller-looking hair and joints that keep up with every prayer. 15% off the 3-pack. | From Suhoor To Sujood |
 
+## 11. 3-Pack "you" headline ads (`3-pack-you-headline-ads/`)
+
+**Balance:** "you/your" appears **once** in each headline as the hook. No repetition, one yellow-marked word, no yellow backgrounds,
+no single pouch.
+
+| File | Headline (marked word in bold) | Primary text | Ad headline |
+|---|---|---|---|
+| `your-skin-full-ritual` | Your skin is worth the **full ritual**. | Your skin is worth the full ritual. Fine lines and dullness don't change overnight; give your skin daily collagen support with the 3-pack, 15% off. | Worth The Full Ritual |
+| `you-need-consistency` | You don't need more products. Just more **consistency**. | You don't need more products, just more consistency. One scoop of halal collagen every day for skin, hair and joints. 15% off the 3-pack. | Just More Consistency |
+| `we-made-this-for-you` | Fine lines? Shedding? Stiff knees? We made this for **you**. | Fine lines? Shedding? Stiff knees? We made this for you: halal collagen that supports skin, hair and joints from within. 15% off the 3-pack. | Made For You |
+| `give-your-hair-time` | Give your hair the **time** it deserves. | Shedding and thinning need patience and daily support. Give your hair the time it deserves with the 3-pack, 15% off. | The Time It Deserves |
+| `your-knees-every-prayer` | Your knees carry *every prayer.* | Your knees carry every prayer. Look after them with daily halal collagen that supports your joints from within. 15% off the 3-pack. | For Every Prayer |
+| `ritual-youll-stick-to` | The ritual you'll actually **stick to**. | No pills, no clumps, just one scoop in your morning drink. The ritual you'll actually stick to. 15% off the 3-pack. | The Ritual That Sticks |
+| `worth-more-than-quick-fix` | You're worth more than a *quick fix.* | You're worth more than a quick fix. Real support for skin, hair and joints takes daily consistency. 15% off the 3-pack. | More Than A Quick Fix |
+| `your-glow-up-fully-stocked` | Your glow-up, **fully stocked**. | Your glow-up, fully stocked: younger-looking skin, fuller-looking hair and joints for prayer, in one daily ritual. 15% off the 3-pack. | Your Glow-Up, Stocked |
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
