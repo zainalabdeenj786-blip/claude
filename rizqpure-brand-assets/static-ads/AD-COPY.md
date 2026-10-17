@@ -160,6 +160,23 @@ the 3-pack is the next step, not a correction.
 | `dear-you-letter` | **Handwritten personal letter** (emotional, one-to-one) | Dear you, you check every label, you kneel in sujood five times a day, and you kept going anyway. You deserve collagen you can trust. Love, RizqPure. | A Note For You |
 | `ramadan-ritual` | **Seasonal** (competitor-proven, done personally) | Long fasts can leave you looking and feeling drained. One scoop at suhoor, all month long. Your Ramadan 3-pack is 15% off. | Your Ramadan Ritual |
 
+## 9. 3-Pack "results" ads (`3-pack-results-ads/`)
+
+**Direction:** the 3-pack is how *you* get your results. **No single pouch is shown, mentioned or compared.** "YOU" leads every ad,
+with key words marked in yellow highlighter.
+
+| File | On image | Primary text | Headline |
+|---|---|---|---|
+| `your-results-need-time` | **YOUR** results need time. **YOU** deserve the full ritual. | Your results need time, and you deserve the full ritual. Collagen works with consistency. Your 3-pack gives your skin, hair and joints the time they need. 15% off. | You Deserve The Full Ritual |
+| `tried-everything-outside` | **YOU**'ve tried everything on the **OUTSIDE**. | You've tried the serums, the masks, the oils, the shampoos. Now give yourself the inside. Your 3-pack: halal collagen, 15% off. | Now Give Yourself The Inside |
+| `this-ones-for-you` | THIS ONE'S **FOR YOU.** + **You** with the hair in the drain / **You** noticing fine lines / **You** whose knees ache in sujood | This one's for you: the hair in the drain, the new fine lines, the knees in sujood. Your 3-pack is made for you. 15% off. | This One's For You |
+| `dont-just-start-commit` | DON'T JUST START. **COMMIT.** | Don't just start, commit. Your skin, hair and knees respond to what you do every day. Commit to you with the 3-pack, 15% off. | Commit To You |
+| `future-you-says-thank-you` | **Future you** is already saying thank you. | Future you is already saying thank you. Stick with your ritual for your skin, hair and joints. Your 3-pack is 15% off. | Future You Says Thanks |
+| `one-habit-fuller-hair` | **YOU**'re one daily **HABIT** away from fuller-looking hair | Less time counting hairs in the drain, more time loving your reflection. You're one daily habit away. Your 3-pack keeps it going, 15% off. | One Habit Away |
+| `skin-isnt-tired` | **YOUR** skin isn't tired. It's **UNDER-SUPPORTED.** | Fine lines and dullness? Your skin isn't tired, it's under-supported. Give it daily collagen support from within. 15% off your 3-pack. | Your Skin Is Under-Supported |
+| `you-stand-bow-kneel` | **YOU** stand. **YOU** bow. **YOU** kneel. | You stand, you bow, you kneel, every day. Now look after your knees with halal collagen that supports your joints from within. 15% off the 3-pack. | For Every Prayer |
+| `reminder-for-you` | Lock-screen notifications: "Reminder for **you**" / "**You** deserve the full ritual" | A little reminder, just for you: your skin, hair and joints are waiting. Your 3-pack is 15% off today. | A Reminder For You |
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
