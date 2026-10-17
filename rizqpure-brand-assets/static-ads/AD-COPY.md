@@ -177,6 +177,22 @@ with key words marked in yellow highlighter.
 | `you-stand-bow-kneel` | **YOU** stand. **YOU** bow. **YOU** kneel. | You stand, you bow, you kneel, every day. Now look after your knees with halal collagen that supports your joints from within. 15% off the 3-pack. | For Every Prayer |
 | `reminder-for-you` | Lock-screen notifications: "Reminder for **you**" / "**You** deserve the full ritual" | A little reminder, just for you: your skin, hair and joints are waiting. Your 3-pack is 15% off today. | A Reminder For You |
 
+## 10. 3-Pack "ritual" ads (`3-pack-ritual-ads/`)
+
+**Direction:** results come from consistency, and the 3-pack is the ritual. No single pouch. "You" used sparingly and naturally.
+No yellow backgrounds; yellow appears only as a marker underline on **one** key word per ad.
+
+| File | On image (marked word in bold) | Primary text | Headline |
+|---|---|---|---|
+| `real-change-is-a-ritual` | Real change isn't a one-off. It's a **ritual**. | Real change isn't a one-off. Skin, hair and joints respond to what happens every day, and the 3-pack keeps the ritual going. 15% off. | It's A Ritual |
+| `consistency-secret-ingredient` | **CONSISTENCY** is the secret ingredient. | Consistency is the secret ingredient. Halal collagen works best as part of the everyday: three pouches, one steady ritual. 15% off. | The Secret Ingredient |
+| `skin-hair-joints-one-ritual` | Skin. Hair. Joints. **One** daily ritual. | Younger-looking skin, fuller-looking hair, joints for prayer: one daily ritual covers all three. 15% off the 3-pack. | One Daily Ritual |
+| `the-glow-up-that-lasts` | The glow-up that *lasts.* | Not a quick fix. A daily halal ritual for skin, hair and joints, stocked for the long run. 15% off the 3-pack. | The Glow-Up That Lasts |
+| `fine-lines-shedding-stiff-knees` | Fine lines. Shedding. Stiff knees. Support all three from **within**. | Fine lines, shedding, stiff knees: support all three from within with one scoop of halal collagen, every day. 15% off the 3-pack. | Support All Three |
+| `made-for-the-long-run` | Made for the **long run**. + Start → Build → Glow bar | Start, build, glow. Three pouches made for the long run, for skin, hair and joints. 15% off the 3-pack. | Made For The Long Run |
+| `every-morning-without-fail` | **Every** morning. Without fail. | Every morning, without fail. One scoop in your coffee or chai for skin, hair and joints. Stocked up with the 3-pack, 15% off. | Every Morning, Sorted |
+| `suhoor-to-sujood` | From suhoor to *sujood.* | From suhoor to sujood: a daily halal ritual for glowing skin, fuller-looking hair and joints that keep up with every prayer. 15% off the 3-pack. | From Suhoor To Sujood |
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
