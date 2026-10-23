@@ -65,3 +65,8 @@ match the format of your `5-signs` and `this-is-for-you-if` ads, so those format
 ## Want real sales and impression numbers?
 Only available to the advertiser themselves. Paid tools (e.g. Foreplay, Minea, PiPiADS, AdSpy) **estimate** reach and spend. Useful for
 direction, but not true sales data. The days-running method above is what most performance marketers use for free.
+
+## Previews
+Screenshots of each ad are in [`competitor-ad-previews/`](competitor-ad-previews/). Files `01.png`–`20.png` follow the numbering above, and `sheet1.jpg` and `sheet2.jpg` are overview sheets.
+Video ads show "trouble playing this video" in a screenshot, but their copy is visible. Open the link to watch them.
+Some ads have several versions, so the Ad Library can show a sibling version's ID instead (e.g. #2 opens under the "Age Powerfully" group).
