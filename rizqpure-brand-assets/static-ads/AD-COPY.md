@@ -209,6 +209,30 @@ no single pouch.
 | `worth-more-than-quick-fix` | You're worth more than a *quick fix.* | You're worth more than a quick fix. Real support for skin, hair and joints takes daily consistency. 15% off the 3-pack. | More Than A Quick Fix |
 | `your-glow-up-fully-stocked` | Your glow-up, **fully stocked**. | Your glow-up, fully stocked: younger-looking skin, fuller-looking hair and joints for prayer, in one daily ritual. 15% off the 3-pack. | Your Glow-Up, Stocked |
 
+## 12. Black Friday + back-in-stock ads (`black-friday-restock-ads/`)
+
+**Offer used:** **25% off the 3-pack + FREE Maximise Guide**, Black Friday week, while stock lasts. The offer is set once at the top of
+`_source/blackfriday.js` (`OFF`, `GIFT`), so you can change it and re-render every ad. Hooks: *back in stock* (scarcity, "you missed it last time")
+plus *Black Friday* (urgency). Percentages only, no single pouch, "you" used once per headline, no yellow backgrounds.
+
+| File | Format (reused from) | On image | Primary text | Headline |
+|---|---|---|---|---|
+| `its-back-sold-out-stamp` | Coming soon / teaser | ~~SOLD OUT~~ It's **back.** | It's back. The halal collagen that sold out is restocked, just in time for Black Friday. 25% off your 3-pack plus a free Maximise Guide, while stock lasts. | It's Back. 25% Off The 3-Pack |
+| `black-friday-calling` | "…is calling" | Your glow is **calling.** Miss out again / Answer | Your glow is calling, and this time it's back in stock. Black Friday: 25% off the 3-pack plus a free Maximise Guide. | Your Glow Is Calling |
+| `black-friday-receipt` | Receipt | Order for: you · Back in stock · −25% · Guide FREE · You save 25% | Your Black Friday receipt: three pouches of halal collagen, 25% off, free guide, charity included. Back in stock while it lasts. | Your Black Friday Order |
+| `back-in-stock-notifications` | Lock-screen notifications | it's back. + 4 notifications | Back in stock. Black Friday 25% off your 3-pack. A free gift for you. Last restock sold out, so don't wait this time. | Back In Stock: 25% Off |
+| `chat-its-back` | Group chat | Sisters chat: "RIZQPURE IS BACK IN STOCK 😭" | The group chat already knows: RizqPure is back in stock and the 3-pack is 25% off for Black Friday, with a free Maximise Guide. | Not Missing It Twice |
+| `search-back-in-stock` | Search bar | "is rizqpure back in stock" → Yes. **And** it's Black Friday. | Yes, it's back. And it's Black Friday: 25% off your 3-pack plus a free Maximise Guide. While stock lasts. | Yes, It's Back |
+| `black-friday-tier-list` | Tier list | Black Friday buys: S tier = RizqPure 3-pack | The only Black Friday buy you'll still be thanking yourself for in a month. 25% off the 3-pack plus a free Maximise Guide. | S-Tier Black Friday Buy |
+| `you-missed-it-cartoon` | Cartoon split before/after | You missed it last time. *Not this time.* | You missed it last time. Not this time: RizqPure is back in stock and the 3-pack is 25% off for Black Friday. | Not This Time |
+| `only-haul-you-need` | Highlighter headline | The only Black Friday **haul** your skin will thank you for. | Fine lines, shedding, stiff knees. Support all three from within with one daily halal scoop. 25% off the 3-pack + free guide. | The Only Haul You Need |
+| `black-friday-gives-back` | Charity / values | This Black Friday, your order **gives back.** | This Black Friday, your order gives back. A portion of every order goes to charity. Back in stock, 25% off the 3-pack. | Shop & Give Back |
+| `restock-for-you-if` | "This is for you if…" checklist | Back in stock for you if… | Tried to order and it was sold out? The wait is over. 25% off your 3-pack plus a free Maximise Guide this Black Friday. | The Wait Is Over |
+
+**Before running:** confirm the 25% and the free guide are live at checkout (and that 25% is a genuine saving on the normal 3-pack price),
+and set the ads to end when the offer ends. Stagger: launch `its-back`, `notifications` and `chat` first (restock news), then switch to
+`tier-list`, `receipt` and `calling` for the last 48 hours of Black Friday week.
+
 ## Testing order (suggested)
 1. **Cold:** `zero-stars` (anti-ageing), `fuller-hair` teaser, `1-scoop-does-both` (joints), `5-signs` (switchers), `glow-up-give-back` (values). One ad set, ~1,000+ impressions each, compare CTR.
 2. **Warm / retargeting:** `missing-from-receipt` (hair & skin), `same-collagen-different-receipt`, `dont-be-a-mug` (3-pack offer), product versions of the winners.
