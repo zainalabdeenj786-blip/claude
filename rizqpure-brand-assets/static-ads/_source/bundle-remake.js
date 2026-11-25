@@ -8,7 +8,7 @@ const FONTS = face('Mont', 'Montserrat-latin.woff2', 'woff2', '100 900') + face(
 const img = f => 'data:image/png;base64,' + b64(path.join(__dirname, f));
 const POUCH = img('pouch.png'), LOGO = img('logo-light.png');
 const NAVY = '#13183F', GOLD = '#B8924F', GREEN = '#2E9B3E';
-const PRICE = '£45.90', WAS = '£60.00', EACH = '£15.30', SAVE = '£14.10', PCT = '23%';
+const PRICE = '£45', WAS = '£60', EACH = '£15', SAVE = '£15', PCT = '25%';
 
 // thin gold line icons
 const ico = {
@@ -67,10 +67,10 @@ const ad = (bf) => `<!doctype html><html><head><meta charset="utf-8"><style>${FO
      <div style="font-weight:900;font-size:28px;letter-spacing:3px">BLACK FRIDAY</div><div style="font-weight:700;font-size:18px;letter-spacing:2px;color:#F2C462">BACK IN STOCK</div></div>` : ''}
   <div style="position:absolute;left:38px;top:735px;width:480px;height:160px;z-index:7;background:#fff;border:2.5px solid ${GOLD};border-radius:22px;box-shadow:0 10px 30px rgba(90,70,40,.12)">
     <div style="position:absolute;left:22px;top:-20px;background:${GREEN};color:#fff;font-weight:800;font-size:24px;padding:6px 18px;border-radius:6px;clip-path:polygon(0 0,92% 0,100% 50%,92% 100%,0 100%)">SAVE ${PCT}&nbsp;&nbsp;</div>
-    <div style="position:absolute;left:26px;top:30px;display:flex;align-items:baseline;gap:20px">
-      <span style="font-weight:800;font-size:76px;letter-spacing:-2px;color:${NAVY};line-height:1">${PRICE}</span>
-      <span style="font-weight:600;font-size:32px;color:#8C8577;text-decoration:line-through;text-decoration-thickness:3px">${WAS}</span></div>
-    <div style="position:absolute;left:26px;top:112px;font-weight:700;font-size:22px;color:${GREEN}">Just ${EACH} each &nbsp;•&nbsp; Save ${SAVE}</div></div>
+    <div style="position:absolute;left:26px;top:20px;display:flex;align-items:baseline;gap:24px">
+      <span style="font-weight:800;font-size:96px;letter-spacing:-2px;color:${NAVY};line-height:1">${PRICE}</span>
+      <span style="font-weight:600;font-size:44px;color:#8C8577;text-decoration:line-through;text-decoration-thickness:3px">${WAS}</span></div>
+    <div style="position:absolute;left:26px;top:114px;font-weight:700;font-size:25px;color:${GREEN}">Just ${EACH} each &nbsp;•&nbsp; Save ${SAVE}</div></div>
   <div style="position:absolute;left:0;right:0;bottom:0;height:150px;z-index:7;background:rgba(255,255,255,.92);border-top:1px solid #E6DAC6;display:flex;align-items:center;padding:0 30px">
     ${trust(truck, 'FREE<br>STANDARD<br>SHIPPING')}<div style="width:1.5px;height:90px;background:#E1D3BC"></div>
     ${trust(ret, '30 DAYS<br>HASSLE-FREE<br>RETURNS')}<div style="width:1.5px;height:90px;background:#E1D3BC"></div>
@@ -80,7 +80,7 @@ const ad = (bf) => `<!doctype html><html><head><meta charset="utf-8"><style>${FO
 (async () => {
   const out = process.argv[2]; fs.mkdirSync(out, { recursive: true });
   const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1080, height: 1080 } });
-  for (const [name, bf] of [['ad-3-month-bundle-45-90-1080x1080', false], ['ad-3-month-bundle-45-90-black-friday-1080x1080', true]]) {
+  for (const [name, bf] of [['ad-3-month-bundle-45-1080x1080', false], ['ad-3-month-bundle-45-black-friday-1080x1080', true]]) {
     await p.setContent(ad(bf)); await p.evaluate(() => document.fonts.ready);
     await p.screenshot({ path: path.join(out, name + '.png') }); console.log(name);
   }
